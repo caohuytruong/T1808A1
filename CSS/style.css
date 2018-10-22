@@ -1,0 +1,64 @@
+span{
+	color: #ff5912;
+	font-weight: 700;
+	font-family: Regular;
+}
+/*#idname
+{
+	color:green;
+}*/
+
+.item{
+	text-align: center;
+	/*text-indent: 100px;*/
+	width: 200px;
+	height: 300px;
+	border: 2px solid /*--solid dotted dashed--*/  white;
+	background-color: white;
+	float: left; /*right none*/ /*dồn các mảng*/
+	margin: 15px 10px; /*tạo khoảng cách ngoài*/
+	padding: 15px 10px; /*tạo khoảng cách trong*/
+	} 
+
+.item1{
+	text-align: center;
+	/*text-indent: 100px;*/
+	width: 200px;
+	height: 300px;
+	border: 2px solid /*--solid dotted dashed--*/  white;
+	background-color: white;
+	float: left; /*right none*/ /*dồn các mảng*/
+	margin: 15px 10px; /*tạo khoảng cách ngoài*/
+	padding: 15px 10px; /*tạo khoảng cách trong*/
+	} 
+
+.item2{
+	text-align: center;
+	/*text-indent: 100px;*/
+	width: 200px;
+	height: 300px;
+	border: 2px solid /*--solid dotted dashed--*/  white;
+	background-color: white;
+	float: left; /*right none*/ /*dồn các mảng*/
+	margin: 15px 10px; /*tạo khoảng cách ngoài*/
+	padding: 15px 10px; /*tạo khoảng cách trong*/
+	} 
+a
+{
+	color: #34404b;
+	font-size: 20px;
+	font-weight: 700; /*độ đậm: 100 300 400 500 600 700 800 900; */
+	line-height: 22px;
+	font-family: Regular;
+	text-decoration: none; /*none underline, over line, line-through; */
+	/*text-align: center;*/ /*left center right justify */
+	/*text-indent: 100px;*/
+
+}
+body{
+	background-color: #F0F8FF;
+}
+
+div{
+	width: 800px;
+}
