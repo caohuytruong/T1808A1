@@ -1,0 +1,26 @@
+a{
+	color: blue;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: Arial;
+	text-decoration: none;
+}
+p{
+	text-align: center;
+	/*text-indent: 100px; */
+}
+.item{
+	text-align: center;
+	width: 300px;
+	height: 400px;
+	/*border:2px solid;*/
+	background-color: white;
+	float:left;/* left right none */
+	margin:15px;
+	/*padding: 20px;*/
+} 
+.team{
+	width: 1200px;
+	background-color: white;
+}
