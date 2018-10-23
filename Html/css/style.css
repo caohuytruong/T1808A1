@@ -1,0 +1,32 @@
+span{
+	color: red;
+	font-family: Arial;
+	font-weight: 600;
+}
+/*#idname
+{
+	color:green;
+}*/
+.item{
+	text-align: center;
+	/*text-indent: 100px;*/
+	width: 300px;
+	height: 400px;
+	/*border: 2px solid /*solid dotted dashed */ black;*/
+	background-color: none;
+	float: left; /*right none*/ /*dồn các mảng*/
+	margin: 15px 10px; /*tạo khoảng cách ngoài*/
+	padding: 10px; /*tạo khoảng cách trong*/
+	} 
+a
+{
+	color: black;
+	font-size: 18px;
+	font-weight: 400; /*100 300 400 500 600 700 800 900; */
+	line-height: 24px;
+	font-family: Palatino Linotype;
+	text-decoration: none; /*none underline, over line, line-through; */
+	/*text-align: center;*/ /*left center right justify */
+	/*text-indent: 100px;*/
+
+}
