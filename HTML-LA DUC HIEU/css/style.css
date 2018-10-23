@@ -1,0 +1,31 @@
+span{
+	color: #f68c5e;
+	font-size: 18px;
+	font-weight: 400px;
+	line-height: 24px;
+	font-family: Arial;
+}
+a{	
+	font-size: 18px;
+	text-decoration: none;
+	color: #080d0a;
+}
+
+.item{
+	text-align: center;
+	width: 200px;
+	height: 290px;
+	background-color: #ffffff;
+	float: left;
+	margin-right: 25px;
+	margin-top: 20px;
+}
+
+body{
+	background-color: #f4f6f8;
+}
+
+div{
+	width: 700px;
+	height: 950px;
+}
