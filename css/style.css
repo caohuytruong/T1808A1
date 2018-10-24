@@ -1,0 +1,39 @@
+a{
+color:#27247c;
+font-size: 18px;
+font-weight: 100;/* 300 400 500 600 700 800 900; */
+line-height: 24px; /*:Độ cao*/;
+font-family: Arial;/*Phông chữ*/
+text-decoration: none; /* line-through:; gạch giữa text, overline: gạch trên text, underline: gạch dưới text*/
+text-align: center; /* sắp xếp vị tri, nội dung đoạn văn bản
+}
+p{
+	text-align: left; /* left right center justify */
+	/* text-indent: 100px; */
+}
+
+.item{
+	text-align: center; /* căn chỉnh text trong khung */
+	width: 350px; /*chiều rộng*/
+	height: 300px; /*chiều cao*/
+	border: 2px solid white; /* 2px: độ đậm viền; dotted = ..., dashed = phân cách, solid = đường viền */
+	background-color: white; /* màu nền */
+	float:left; /* dồn khoảng trống left right none */
+	margin:5px; /* tạo khoảng cách bên ngoài */
+	/*margin-top: 
+	margin-right: 
+	margin-bottom:
+	margin-left:*/ 
+	padding:5px; /* tạo khoảng cách bên trong */
+}
+span{
+	color:#ff5912; /*tất cả thẻ span auto đổi sang màu được chọn*/
+    font-size: 20px;
+    font-weight: 100;
+}
+body
+{
+
+	/*margin-top: 100px;
+	margin-left: 300px;*/
+}
