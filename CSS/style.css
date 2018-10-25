@@ -59,6 +59,29 @@ body{
 	background-color: #F0F8FF;
 }
 
-div{
+.sanpham{
+	height: 500px;
+	width: 800px;
+}
+
+.main1{
+	border: 2px solid white;
+	background-color: white;
+	margin: 1px 530px 1px  0px;
+	padding: 1px 530px 0px  0px;
+	}
+h6{
+	font-family: Arial;
+	fill-rule: left;
+}
+.main2{
+	border: 2px solid white;
+	background-color: white;
+	margin: 1px 530px 0px  0px;
+	padding: 1px 530px 0px  0px;
+	float: left;
+}
+div
+{
 	width: 800px;
 }
