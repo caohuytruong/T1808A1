@@ -164,8 +164,7 @@ a{
 	background-color: #ff5912;
 	margin-right: 15px;
 	text-align: center;
-	padding-top:15px;
-	
+	padding-top:15px;	
 }
 .doan_5
 {	width: 100%;
@@ -175,23 +174,30 @@ a{
 .doan_5_1
 {
 	float:left;
-	width: 25%;
-	background-color: white;
+	width: 30%;
 	margin-top: 40px;
 }
 .doan_5_2
 {
 	float:left;
-	width: 50%;
-	background-color: white;
+	width: 15%;
 	margin-top: 40px;
-	word-spacing: 50px;
 }
 .doan_5_3
 {
 	float:left;
-	width: 25%;
-	background-color: white;
+	width: 15%;
+	margin-top: 40px;
+}
+.doan_5_4
+{
+	float:left;
+	width: 20%;
+	margin-top: 40px;
+}
+.doan_5_5
+{
+	width: 20%;
 	margin-top: 40px;
 	float: right;
 }
