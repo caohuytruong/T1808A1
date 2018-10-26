@@ -129,15 +129,52 @@
 		.body-right{
 			float: left;
 			width: 85%;
+			margin-top: 35px;
 		}
 
 		.section_4{
 			height: 100px;
 			background-color: white;
+			padding-bottom: 40px;
 		}
+		.section_4_1{
+			width: 50%;
+			float: left;
+			padding-top: 40px;
+		}
+		.section_4_1 h3{
+			color: #ff5912;
+			display: inline-block;
+		}
+		.section_4_2{
+			width: 50%;
+			float: left;
+			text-align: left;
+   			padding-top: 40px;
+		}
+		.section_4_2 i{
+			margin-top: 20px;
+    		margin-left: 20px;
+		}
+		.section_4_2 input{
+			border: none;
+			border-bottom: 1px solid black;  
+		}
+		.section_4_2 button{
+			float: right;
+			margin-top: 5px;
+		    padding: 10px;
+		    padding-right: 25px;
+		    padding-left: 25px;
+		    text-align: center;
+		    color: white; 
+		    background-color: #ff5912;
+		}		
+
 		.section_5{
 			height: 150px;
 			background-color: white;
+			margin-top: 40px;
 		}
 
 
@@ -146,22 +183,25 @@
 		}
 		.menu{
 			background-color: white;
-			margin-top: 10px;
-    		margin-bottom: 20px;
-    		height: 200px;
-    		padding-top: 10px;
+    		margin-bottom: 100px;
+    		height: 100%;
+    		padding-top: 20px;
     		padding-left: 35px;
+    		padding-bottom: 20px;
+    		margin-top: 39px;
+		}
+		.menu > h4{
+			color: #ff5912;
 		}
 
 
 
-				.o{
+		.o{
 			text-align: center;
 			float: left;
 			width: 295px;
 			margin-left: 40px;
     		margin-right: 40px;
-    		margin-top: 10px;
     		margin-bottom: 20px;
     		background-color: white;
 		}
@@ -297,23 +337,23 @@
 					<li>Hot Deals</li>
 				</ul>
 			</div>
-			<div class="menu">
-				<h4>Price Filtte</h4>
-				<img src="ex_24_105..jpg" alt="">
+			<div class="menu" style="padding-left: 5px;">
+				<h4 style="padding-left: 30px;">Price Filtte</h4>
+				<img src="img/Ex_24_105.jpg" alt="">
 			</div>
 			<div class="menu">
 				<h4>Sizes</h4>
-					<input  type="checkbox">Small<br />
-					<input  type="checkbox">Mcidum<br />
-					<input  type="checkbox">Larg<br />
-					<input  type="checkbox">X Larg<br />
+					<input  type="checkbox"> &nbspSmall<br /><br />
+					<input  type="checkbox"> &nbspMcidum<br /><br />
+					<input  type="checkbox"> &nbspLarg<br /><br />
+					<input  type="checkbox"> &nbspX Larg<br /><br />
 			</div>
 			<div class="menu">
 				<h4>Brands</h4>
-					<input  type="checkbox">Reebok<br />
-					<input  type="checkbox">Addidas<br />
-					<input  type="checkbox">Nike<br />
-					<input  type="checkbox">Active<br />
+					<input  type="checkbox"> &nbspReebok<br /><br />
+					<input  type="checkbox"> &nbspAddidas<br /><br />
+					<input  type="checkbox"> &nbspNike<br /><br />
+					<input  type="checkbox"> &nbspActive<br /><br />
 			</div>
 		</div>
 		<div class="body-right">
@@ -379,14 +419,22 @@
 						</div>
 
 				</div>
-				<div>
-					<img src="ex_24_104.jpg" alt="">	
-				</div>
 		</div>		
+		<div style="text-align: center; height: 100%; width: 75%; background-color: white; margin-bottom: 20px; float: right; margin-right: 70px;">
+					<img src="img/Ex_24_104.jpg" alt="">	
+		</div>
 	</div>
 	<section class="section section_4">
 		<div class="container">
-			
+			<div class="section section_4_1">
+				<h3>NEWS LETTER</h3>
+				<i>join us now to get all news and special offers</i>
+			</div>
+			<div class="section section_4_2">
+				<i class="fa fa-envelope-o" aria-hidden="true" style="color: #ff5912"></i>
+				<input type="text" placeholder="type your email here">
+				<button type="submit">join us</button>
+			</div>
 		</div>
 	</section>
 	<footer class="section section_5">
