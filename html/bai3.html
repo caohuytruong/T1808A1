@@ -1,14 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Bachhocuuvi</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css" media="screen">
 		body{
 			background-color: #ccd5cc;
 		}
-		.o{
+		ul{
+			margin: 0px;
+		}
+		a{
+			display: block;
+            color: black;
+            text-decoration: none;
+		}
+		li{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		i{
+			margin-left: 10px;
+   			margin-right: 10px;
+		}
+
+
+		.section{
+			float: left;
+			width: 100%;
+		}
+		.container{
+			width: 1170px;
+			margin: 0 auto;
+		 	height: 100%;
+			background-color: white;
+		}
+
+
+		.section_1{
+			height: 100px;
+			background-color: white;
+			border-bottom: 1px solid;
+		}
+		.section_1 p{
+			padding-top: 20px;
+		}
+
+		
+		.section_1_1{
+			float:left;
+			width: 50%;
+		 	height: 100%;
+			background-color: white;
+		}
+		.section_1_1  i{
+			color: #ff5912;
+			padding-left: 20px;
+		}
+
+
+
+		.section_1_2{
+			float:left;
+			width: 50%;
+			text-align: right;
+			height: 100%;
+			background-color: white;
+		}
+		.section_1_2  i{
+			padding-top: 40px;
+		}
+
+
+
+		.section_2{
+			height: 100px;
+			background-color: white;
+		}
+		.section_2_1{
+			float: left;
+			width: 20%;
+		 	height: 100%;
+			background-color: white;
+		}
+		
+
+
+
+		.section_2_2{
+			float: left;
+			width: 50%;
+		 	height: 100%;
+			background-color: white;
+		}
+		.section_2_2 ul{
+			margin-top: 30px;
+		}
+		.section_2_2 ul li{
+			list-style: none;
+			float: left;
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+
+
+
+
+		.section_2_3{
+			float: left;
+			width: 30%;
+		 	height: 100%;
+			background-color: white;
+			text-align: right;
+		}
+		.section_2_3 i{
+
+			margin-top: 40px;
+		}
+
+
+		#body{
+			margin-top: 20px;
+		}
+		.body-left{
+			float: left;
+			width: 15%;
+		}
+		.body-right{
+			float: left;
+			width: 85%;
+		}
+
+		.section_4{
+			height: 100px;
+			background-color: white;
+		}
+		.section_5{
+			height: 150px;
+			background-color: white;
+		}
+
+
+		.img{
+			margin-top: 30px;
+		}
+		.menu{
+			background-color: white;
+			margin-top: 10px;
+    		margin-bottom: 20px;
+    		height: 200px;
+    		padding-top: 10px;
+    		padding-left: 35px;
+		}
+
+
+
+				.o{
 			text-align: center;
 			float: left;
 			width: 295px;
@@ -23,43 +170,20 @@
 			height: 288px;
 			width: 216px;
 		}
-		a{
-			display: block;
-            color: black;
-            text-decoration: none;
-		}
+		
 		.o > p{
 			color: red;
 		}
-		li{
-			margin-top: 10px;
-			margin-bottom: 10px;
-		}
-		i{
-			margin-left: 10px;
-   			margin-right: 10px;
-		}
-		.body-right{
-			float: left;
-			width: 15%;
-		}
-		.body-left{
-			float: left;
-			width: 85%;
-		}
-		.menu{
-			background-color: white;
-			margin-top: 10px;
-    		margin-bottom: 20px;
-    		height: 200px;
-    		padding-top: 10px;
-    		padding-left: 35px;
-		}
-		#head{
-			background-color: white;
-		}
-		#head1{
+
+		
+		
+
+		.head{
 			border-bottom: 1px solid black;
+			float: left;
+		    width: 100%;
+		    background-color: white;
+		    height: 100%;
 		}
 		#icon1{
 			display: inline-block;
@@ -68,16 +192,12 @@
 			padding-top: 15px;
 			float: right;
 		}
-		#head2{
-			float: left;
-		    width: 100%;
-		    background-color: white;
-		}
 		#img{
 			padding-top: 10px;
 			width: 20%;
 			height: 100%;
     		float: left;
+    		display: inline-block;
 		}
 		#menuhead1{
 			float: left;
@@ -95,41 +215,63 @@
 			padding-right: 20px;
 			padding-top: 15px;
 		}
-		
+		#footer{
+			background-color: white;
+			height: 250px;
+			width: 100%;
+		}
 		#icon3{
 			width: 20%;
-			float: left;
+			float: right;
 			height: 100%;
 			padding-top: 20px;
 			text-align: right;
 
 		}
-
+		#img2{
+			float: left;
+			width: 20%;
+		}
+		.list{
+			float: left;
+			width: 15%;
+		}
+		#img3{
+		    float: left;
+		    width: 20%;
+		    text-align: right;
+		}
+		#img3 > p{
+			margin-right: 15px;
+		}
 	</style>
 </head>
 <body>
-	<div id="head">
-		<div id="head1">
-			<div id="icon1">
+	<section class="section section_1">
+		<div class="container">
+			<div class="section_1_1">
 				<p>
 					<i class="fa fa-envelope-o" aria-hidden="true"></i>	info@shopy.com 	
 					<i class="fa fa-phone" aria-hidden="true"></i>	 453 - 5553 - 996
 				</p>
 			</div>
-			
-			<div id="icon2">
+			<div class="section_1_2">
 				<i class="fa fa-facebook" aria-hidden="true"></i>
 				<i class="fa fa-twitter" aria-hidden="true"></i>
 				<i class="fa fa-google-plus" aria-hidden="true"></i>
 				<i class="fa fa-instagram" aria-hidden="true"></i>
 			</div>
 		</div>
-		<div id="head2">
-			<div id="img">
-				<img src="img/ex_24_10.jpg" alt="">
+	</section>
+	<header class="section section_2">
+		<div class="container">
+			<div class="section_2_1">
+				<div class="img">
+					<img src="img/ex_24_10.jpg" alt="">
+				</div>
 			</div>
-			<div id="menuhead1">
-				<ul id="menuhead2">
+			<div class="section_2_2">
+				<ul id="menuhead">
 					<li>Home</li>
 					<li>Products</li>
 					<li>Hot Deals</li>
@@ -137,17 +279,15 @@
 					<li>Contact</li>
 				</ul>
 			</div>
-			<div id="icon3">
+			<div class="section_2_3">
 				<i class="fa fa-search" aria-hidden="true"></i>
 				<i class="fa fa-user" aria-hidden="true"></i>
 				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 			</div>
-			
 		</div>
-	</div>
-	
+	</header>
 	<div id="body">
-		<div class="body-right">
+		<div class="body-left">
 			<div class="menu">
 				<h4>Categories</h4>
 				<ul>
@@ -158,25 +298,25 @@
 				</ul>
 			</div>
 			<div class="menu">
+				<h4>Price Filtte</h4>
+				<img src="ex_24_105..jpg" alt="">
+			</div>
+			<div class="menu">
 				<h4>Sizes</h4>
-				<ul>
-					<li>Small</li>
-					<li>Mcidum</li>
-					<li>Larg</li>
-					<li>X Larg</li>
-				</ul>
+					<input  type="checkbox">Small<br />
+					<input  type="checkbox">Mcidum<br />
+					<input  type="checkbox">Larg<br />
+					<input  type="checkbox">X Larg<br />
 			</div>
 			<div class="menu">
 				<h4>Brands</h4>
-				<ul>
-					<li>Reebok</li>
-					<li>Addidas</li>
-					<li>Nike</li>
-					<li>Active</li>
-				</ul>
+					<input  type="checkbox">Reebok<br />
+					<input  type="checkbox">Addidas<br />
+					<input  type="checkbox">Nike<br />
+					<input  type="checkbox">Active<br />
 			</div>
 		</div>
-		<div class="body-left">
+		<div class="body-right">
 				<div class="hang">
 						<div class="o">
 							<img src="img/Ex_22_101.jpg" alt="" class="anh">
@@ -239,31 +379,54 @@
 						</div>
 
 				</div>
+				<div>
+					<img src="ex_24_104.jpg" alt="">	
+				</div>
 		</div>		
 	</div>
-
-	<footer>
-		<div>
-			<img src="img/ex_24_10.jpg" alt="">
-			<p>shopy c 2015 . your copy right here</p>
+	<section class="section section_4">
+		<div class="container">
+			
 		</div>
-		<div>
-			<ul>
-				<li>about us</li>
-				<li>contact us</li>
-				<li>support</li>
-			</ul>
-		</div>
-		<div>
-			<ul>
-				<li>about us</li>
-				<li>contact us</li>
-				<li>support</li>
-			</ul>
+	</section>
+	<footer class="section section_5">
+		<div class="container">
+			<div id="img2">
+				<img src="img/ex_24_10.jpg" alt="">
+				<p>shopy c 2015 . your copy right here</p>
+			</div>
+			<div class="list">
+				<ul>
+					<li>about us</li>
+					<li>contact us</li>
+					<li>support</li>
+				</ul>
+			</div>
+			<div class="list">
+				<ul>
+					<li>about us</li>
+					<li>contact us</li>
+					<li>support</li>
+				</ul>
+			</div>
+			<div class="list">
+				<ul>
+					<li>our feed</li>
+					<li>terms and conditions</li>
+					<li>our privacy</li>
+				</ul>
+			</div>
+			<div class="list">
+				<ul>
+					<li>join us</li>
+					<li>live support</li>
+				</ul>
+			</div>
+			<div id="img3">
+				<p>Payment Methods</p>
+				<img src="img/cart.jpg" alt="">
+			</div>
 		</div>
 	</footer>
-	
-	
-
 </body>
 </html>
