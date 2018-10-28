@@ -3,6 +3,7 @@
 <head>
 	<title> BAI2</title>
 	<meta charset="UTF--8"/>
+	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet"/>
 		<link rel="stylesheet" href="css/style2.css"/>
 		<head>
 			<style>
@@ -12,6 +13,7 @@ body {
  
 </style>
 <body>
+	<form method="GET" action="#" name="form_data" class="form" enctype="multipart/form_data">
 	<section class="doan doan_1">
 		<div class="chia_giua">
 			<div class="doan_1_1">
@@ -64,24 +66,27 @@ body {
 
 				<div class="menu menu2">
 					<p><b> <font color="#ff5912">Price Filtter</font> </b> </p>
-					<p> From To</p>
+					0
+					<input type="range" name="range" value="" placeholder="range" class="gia"/>100
+					<p> From <input type="number" name="number" value="" placeholder="0" min="0" max="100"/> 
+						To <input type="number" name="number" value="" placeholder="100" min="1" max="100"/> </p>
 				</div>
 
 				<div class="menu menu3">
 					<p><b> <font color="#ff5912">Sizes</font> </b> </p>
-					<p> Small</p>
-					<p> Midum</p>
-					<p> Lagr</p>
-					<p> X Lagr</p>
+					<p> <input type="checkbox"/> Small</p>
+					<p> <input type="checkbox"/> Midum</p>
+					<p> <input type="checkbox"/> Lagr</p>
+					<p> <input type="checkbox"/> X Lagr</p>
 				</div>
 
 				<div class="menu menu4">
 					<p><b> <font color="#ff5912">Brands</font> </b> </p>
-					<p> Rebok </p>
-					<p> Rebox</p>
-					<p> Addidas</p>
-					<p> Nike</p>
-					<p> Active</p>
+					<p><input type="checkbox"/> Rebok </p>
+					<p><input type="checkbox"/> Rebox</p>
+					<p><input type="checkbox"/> Addidas</p>
+					<p><input type="checkbox"/> Nike</p>
+					<p><input type="checkbox"/> Active</p>
 				</div>
 			</div>
 
@@ -151,14 +156,15 @@ body {
 		<div class="chia_giua">
 			<div class="doan_4_1">
 			<b><font color= "#ff5912"> NEW LETTER </font></b>
-				<i><span style="padding-left: 50px">join us now to get all news and special offers </span></i>
+				<i><span style="padding-left: 50px; color: #34404b">join us now to get all news and special offers </span></i>
 			</div>
 			<div class="doan_4_2">
 				<img src="images/doan1_1.png"/>
 				&nbsp;<i><font color="gray">type your email here </font></i>
-				<div class="doan_4_3">
-				<font color="#ffffff">join us</font>
+				
 			</div>
+			<div class="doan_4_3">
+				<font color="#ffffff">join us</font>
 			</div>
 			
 		</div>
