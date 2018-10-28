@@ -15,25 +15,27 @@ p{
 .item{
 	text-align: center; /* căn chỉnh text trong khung */
 	width: 350px; /*chiều rộng*/
-	height: 300px; /*chiều cao*/
+	height: 300px; chiều cao
 	border: 2px solid white; /* 2px: độ đậm viền; dotted = ..., dashed = phân cách, solid = đường viền */
 	background-color: white; /* màu nền */
 	float:left; /* dồn khoảng trống left right none */
-	margin:5px; /* tạo khoảng cách bên ngoài */
+	margin:5px; /* tạo khoảng cách bên trong giữa text và các đỉnh */
 	/*margin-top: 
 	margin-right: 
 	margin-bottom:
 	margin-left:*/ 
-	padding:5px; /* tạo khoảng cách bên trong */
+	padding:5px; /* thêm khoảng cách bên ngoài các dòng text */
 }
 span{
-	color:#ff5912; /*tất cả thẻ span auto đổi sang màu được chọn*/
+	color:#ff5912; tất cả thẻ span auto đổi sang màu được chọn
     font-size: 20px;
     font-weight: 100;
 }
-body
+/*body
 {
 
-	/*margin-top: 100px;
-	margin-left: 300px;*/
-}
+	margin-top: 100px;
+	margin-left: 300px;
+}*/
+
+
