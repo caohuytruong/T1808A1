@@ -1,0 +1,234 @@
+		body{
+			background-color: #ccd5cc;
+		}
+		ul{
+			margin: 0px;
+		}
+		a{
+			display: block;
+            color: black;
+            text-decoration: none;
+		}
+		li{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		i{
+			margin-left: 10px;
+   			margin-right: 10px;
+		}
+
+
+		.section{
+			float: left;
+			width: 100%;
+		}
+		.container{
+			width: 1170px;
+			margin: 0 auto;
+		 	height: 100%;
+			background-color: white;
+		}
+
+
+		.section_1{
+			height: 100px;
+			background-color: white;
+			border-bottom: 1px solid #f4f6f8;
+		}
+		.section_1 p{
+			padding-top: 20px;
+		}
+
+		
+		.section_1_1{
+			float:left;
+			width: 50%;
+		 	height: 100%;
+			background-color: white;
+		}
+		.section_1_1  i{
+			color: #ff5912;
+			padding-left: 20px;
+		}
+
+
+
+		.section_1_2{
+			float:left;
+			width: 50%;
+			text-align: right;
+			height: 100%;
+			background-color: white;
+		}
+		.section_1_2  i{
+			padding-top: 40px;
+		}
+
+
+
+		.section_2{
+			height: 100px;
+			background-color: white;
+		}
+		.section_2_1{
+			float: left;
+			width: 20%;
+		 	height: 100%;
+			background-color: white;
+		}
+		
+
+
+
+		.section_2_2{
+			float: left;
+			width: 50%;
+		 	height: 100%;
+			background-color: white;
+		}
+		.section_2_2 ul{
+			margin-top: 30px;
+		}
+		.section_2_2 ul li{
+			list-style: none;
+			float: left;
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+		.section_2_3{
+			float: left;
+			width: 30%;
+		 	height: 100%;
+			background-color: white;
+			text-align: right;
+		}
+		.section_2_3 i{
+
+			margin-top: 40px;
+		}
+
+
+
+
+		.section_4{
+			height: 100px;
+			background-color: white;
+			padding-bottom: 40px;
+		}
+		.section_4_1{
+			width: 50%;
+			float: left;
+			padding-top: 40px;
+		}
+		.section_4_1 h3{
+			color: #ff5912;
+			display: inline-block;
+		}
+		.section_4_2{
+			width: 50%;
+			float: left;
+			text-align: left;
+   			padding-top: 40px;
+		}
+		.section_4_2 i{
+			margin-top: 20px;
+    		margin-left: 20px;
+		}
+		.section_4_2 input{
+			border: none;
+			border-bottom: 1px solid black;  
+		}
+		.section_4_2 button{
+			float: right;
+			margin-top: 5px;
+		    padding: 10px;
+		    padding-right: 25px;
+		    padding-left: 25px;
+		    text-align: center;
+		    color: white; 
+		    background-color: #ff5912;
+		}		
+
+		.section_5{
+			height: 150px;
+			background-color: white;
+			margin-top: 40px;
+			padding-top: 20px;
+		}
+
+
+		.img{
+			margin-top: 30px;
+		}
+
+
+		
+		
+
+		.head{
+			border-bottom: 1px solid black;
+			float: left;
+		    width: 100%;
+		    background-color: white;
+		    height: 100%;
+		}
+		#icon1{
+			display: inline-block;
+		}
+		#icon2{
+			padding-top: 15px;
+			float: right;
+		}
+		#img{
+			padding-top: 10px;
+			width: 20%;
+			height: 100%;
+    		float: left;
+    		display: inline-block;
+		}
+		#menuhead1{
+			float: left;
+			display: inline-block;
+			width: 50%;
+			height: 100%;
+		}
+		#menuhead2{
+			margin: 0px;
+		}
+		#menuhead2 > li{
+			list-style: none;
+			float: left;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 15px;
+		}
+		#footer{
+			background-color: white;
+			height: 250px;
+			width: 100%;
+		}
+		#icon3{
+			width: 20%;
+			float: right;
+			height: 100%;
+			padding-top: 20px;
+			text-align: right;
+
+		}
+		#img2{
+			float: left;
+			width: 21%;
+		}
+		.list{
+			float: left;
+			width: 15%;
+		}
+		#img3{
+		    float: left;
+		    width: 19%;
+		    text-align: right;
+		}
+		#img3 > p{
+			margin-right: 15px;
+		}
