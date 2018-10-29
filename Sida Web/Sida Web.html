@@ -1,216 +1,235 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to Sida Web 2</title>
+	<title>Welcome to Sida Web</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="vendor/font awesome/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
 </head>
 <body>
-	<section class="section section_1">
+	<header class="section section_1">
 		<div class="contain">
 			<div class="section_1_1">
-				<img src="images/mail icon.png">
+				<i class="far fa-envelope"></i>
 				<span>info@shopy.com</span>
-				<img src="images/phone icon.png">
+				<i class="fas fa-phone-square"></i>
 				<span>453 - 5553 - 996</span>
 			</div>
 			<div class="section_1_2">
-				<img src="images/insta.png">
-				<img src="images/google.png">
-				<img src="images/twitter.png">
-				<img src="images/fb.png">
-			</div>
-		</div>
-	</section>
-	<header class="section section_2">
-		<div class="contain">
-			<div class="section_2_1">
-				<a href=""><img src="images/logo.png"></a>
-			</div>
-			<div class="section_2_2">
-				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Products</a></li>
-					<li><a href="">Hot Deals</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</div>
-			<div class="section_2_3">
-				<a href=""><img class="cart" src="images/cart.png"></a>
-				<a href=""><img class="user" src="images/user.png"></a>
-				<a href=""><img class="search" src="images/search.png"></a>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-google-plus-g"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-facebook-f"></i>
 			</div>
 		</div>
 	</header>
+
+	<section class="section section_2">
+		<div class="contain">
+			<div class="section_2_1">
+				<img src="images/logo.png">
+			</div>
+			<div class="section_2_2">
+				<ul>
+					<li>Home</li>
+					<li>Products</li>
+					<li>Hot Deals</li>
+					<li>About</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+			<div class="section_2_3">
+				<i class="fas fa-shopping-cart"></i>
+				<i class="fas fa-user"></i>
+				<i class="fas fa-search"></i>
+			</div>
+		</div>
+	</section>
+
 	<section class="section section_3">
 		<div class="contain">
 			<div class="section_3_1">
-				<div class="section_3_1_1">
+				<div class="block categories">
+					<b><h3>Categories</h3></b>
+					<b><a href="">Man</a></b>
+					<b><a href="">Women</a></b>
+					<b><a href="">Childrens</a></b>
+					<b><a href="">Hot Deals</a></b>
+				</div>
+				<dir class="block price_filter">
+					<b><h3>Price Filter</h3></b>
+					<b><span>100$</span>
+					<span>1000$</span></b>
+					<input class="range" type="range" name="range"></br>
+					<div class="input">
+						<label class="label1" for="number1">From</label>
+						<input class="input1" id="number1" type="number" name="number">
+						<label class="label2" for="number2">To</label>
+						<input class="input2" id="number2" type="number" name="number">
+					</div>
+				</dir>
+				<dir class="block sizes">
+					<b><h3>Sizes</h3></b>
 					<ul>
-						<p><span><b>Categories</b></span></p>
-						<li><a href="">Man</a></li>
-						<li><a href="">Women</a></li>
-						<li><a href="">Childrens</a></li>
-						<li><a href="">Hot Deals</a></li>
+						<li>
+							<input id="small" type="checkbox" name="small">
+							<label for="small">Small</label>
+						</li>
+						<li>
+							<input id="medium" type="checkbox" name="medium">
+							<label for="medium">Medium</label>
+						</li>
+						<li>
+							<input id="large" type="checkbox" name="large">
+							<label for="large">Large</label>
+						</li>
+						<li>
+							<input id="x_large" type="checkbox" name="x_large">
+							<label for="x_large">X Large</label>
+						</li>
 					</ul>
-				</div>
-				<div class="section_3_1_2">
-					<p><span><b>Price Filter</b></span></p>
-					<img src="images/Price Filter.png">
-				</div>
-				<div class="section_3_1_3">
-					<p><span><b>Sizes</b></span></p>
-					<div>
-					<img src="images/Check Box Active.png">
-					<a href="">Small</a></br>
-					</div>
-					<div>
-					<img src="images/Check Box.png">
-					<a href="">Midum</a></br>
-					</div>
-					<div>
-					<img src="images/Check Box.png">
-					<a href="">Larg</a></br>
-					</div>
-					<div>
-					<img src="images/Check Box.png">
-					<a href="">X Larg</a></br>
-					</div>
-				</div>
-				<div class="section_3_1_4">
-					<p><span><b>Brands</b></span></p>
-					<div>
-					<img src="images/Check Box Active.png">
-					<a href="">Reebook</a></br>
-					</div>
-					<div>
-					<img src="images/Check Box.png">
-					<a href="">Addidas</a></br>
-					</div>
-					<div>
-					<img src="images/Check Box.png">
-					<a href="">Nike</a></br>
-					</div>
-					<div>
-					<img src="images/Check Box.png">
-					<a href="">Active</a></br>
-					</div>
-				</div>
+				</dir>
+				<dir class="block brands">
+					<b><h3>Brands</h3></b>
+					<ul>
+						<li>
+							<input id="reebok" type="checkbox" name="reebok">
+							<label for="reebok">Reebok</label>
+						</li>
+						<li>
+							<input id="adidas" type="checkbox" name="adidas">
+							<label for="adidas">Adidas</label>
+						</li>
+						<li>
+							<input id="nike" type="checkbox" name="nike">
+							<label for="nike">Nike</label>
+						</li>
+						<li>
+							<input id="active" type="checkbox" name="active">
+							<label for="active">Active</label>
+						</li>
+					</ul>
+				</dir>
 			</div>
+			
 			<div class="section_3_2">
-				<div class="item">
-					<img src="images/jacket 2.png">
-					<p><b><a href="">Reebook Track Jacket</a></b></p>
-					<p><b><span>100$</span></b></p>
-				</div>
-
-				<div class="item2">
-					<img class="small_item" src="images/jacket 4.png">
-					<p><b><a href="">Reebook Track Jacket</a></b></p>
-					<p><b><span>size  :  s - m - l - xl</span></b></p>
-					<div>	
-						<img class="color" src="images/red.png">
-						<img class="color" src="images/black.png">
-						<img class="color" src="images/blue.png">
-						<img class="color" src="images/green.png">
+				<div class="row">
+					<div class="item">
+						<div class="item_content">
+							<img src="images/jacket 2.png">
+							<p><a href="">Reebok Track Jacket</a></p>
+							<p><b><span>100$</span></b></p>
+						</div>
 					</div>
-					<div class="untitled">
-						<img class="icon_2" src="images/icon 1.png">
-						<img class="icon_2" src="images/icon 2.png">
-						<img class="icon_2" src="images/icon 3.png">
+					<div class="item">
+						<div class="item_content">
+							<img src="images/jacket 1.png">
+							<p><a href="">Reebok Track Jacket</a></p>
+							<p><b><span>100$</span></b></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_content">
+							<img src="images/jacket 1.png">
+							<p><a href="">Reebok Track Jacket</a></p>
+							<p><b><span>100$</span></b></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_content">
+							<img src="images/jacket 2.png">
+							<p><a href="">Reebok Track Jacket</a></p>
+							<p><b><span>100$</span></b></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_content">
+							<img src="images/jacket 3.png">
+							<p><a href="">Reebok Track Jacket</a></p>
+							<p><b><span>100$</span></b></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_content">
+							<img src="images/jacket 1.png">
+							<p><a href="">Reebok Track Jacket</a></p>
+							<p><b><span>100$</span></b><p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_content">
+							<img src="images/jacket 2.png">
+							<p><a href="">Reebok Track Jacket</a></p>
+							<p><b><span>100$</span></b></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_content">
+							<img src="images/jacket 3.png">
+							<p><a href="">Reebok Track Jacket</a></p>
+							<p><b><span>100$</span></b></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item_content">
+							<img src="images/jacket 1.png">
+							<p><a href="">Reebok Track Jacket</a></p>
+							<p><b><span>100$</span></b></p>
+						</div>
 					</div>
 				</div>
-
-				<div class="item">
-					<img src="images/jacket.png">
-					<p><b><a href="">Reebook Track Jacket</a></b></p>
-					<p><b><span>100$</span></b></p>
+				<div class="loadmore">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
 				</div>
-
-				<div class="item">
-					<img src="images/jacket 2.png">
-					<p><b><a href="">Reebook Track Jacket</a></b></p>
-					<p><b><span>100$</span></b></p>
-				</div>
-
-				<div class="item">
-					<img src="images/jacket 3.png">
-					<p><b><a href="">Reebook Track Jacket</a></b></p>
-					<p><b><span>100$</span></b></p>
-				</div>
-
-				<div class="item">
-					<img src="images/jacket.png">
-					<p><b><a href="">Reebook Track Jacket</a></b></p>
-					<p><b><span>100$</span></b></p>
-				</div>
-
-				<div class="item">
-					<img src="images/jacket 2.png">
-					<p><b><a href="">Reebook Track Jacket</a></b></p>
-					<p><b><span>100$</span></b></p>
-				</div>
-
-				<div class="item">
-					<img src="images/jacket 3.png">
-					<p><b><a href="">Reebook Track Jacket</a></b></p>
-					<p><b><span>100$</span></b></p>
-				</div>
-
-				<div class="item">
-					<img src="images/jacket.png">
-					<p><b><a href="">Reebook Track Jacket</a></b></p>
-					<p><b><span>100$</span></b></p>
-				</div>
-
-				<div class="overload">
-					<a href=""><img src="images/overload.png"></a>
-				</div>
-
 			</div>
 		</div>
 	</section>
+
 	<section class="section section_4">
 		<div class="contain">
 			<div class="section_4_1">
-				<a href=""><b><span>NEWS LETTER</span></b></a>
-				<i><span>join us to get all news and special offers</span></i>
+				<b><span>NEWS LETTER</span></b>
+				<i><span>join us now to get all news and special offers</span></i>
+
 			</div>
 			<div class="section_4_2">
-				<a href=""><img class="button" src="images/button.png"></a>
-				<i><span>type your email here</span></i>
-				<img class="mail_icon" src="images/mail icon.png">
-
+				<button type="submit">join us</button>
+				<input style="font-style: italic;" type="email" name="email" value="" placeholder="type your email here">
+				<i class="far fa-envelope"></i>
 			</div>
 		</div>
 	</section>
+
 	<footer class="section section_5">
 		<div class="contain">
 			<div class="section_5_1">
-				<img src="images/logo.png">
-				<p><span>shopy c 2015. your copy right here</span></p>
+				<img src="images/logo 2.png">
 			</div>
 			<div class="section_5_2">
-				<ul class="ul_1">
-					<li>about us</li>
+				<ul class="list_1">
+					<li>about</li>
 					<li>contact us</li>
 					<li>support</li>
 				</ul>
-				<ul class="ul_2">
+				<ul class="list_2">
 					<li>our feed</li>
 					<li>terms and conditions</li>
-					<li>out privacy</li>
+					<li>our privacy</li>
 				</ul>
-				<ul class="ul_3">
+				<ul class="list_3">
 					<li>join us</li>
-					<li>love support</li>
+					<li>live support</li>
 				</ul>
 			</div>
 			<div class="section_5_3">
-				<p><b><span>Payment Methods</span></b></p>
-				<img src="images/payment.png">
+				<ul>
+					<li><span><b>Payment Methods</b></span></li>
+					<li><img src="images/payment.png"></li>
+				</ul>
 			</div>
 		</div>
-	</footer>>
+	</footer>
 </body>
 </html>
