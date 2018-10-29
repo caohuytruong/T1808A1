@@ -111,3 +111,29 @@ span{
 	background-color: #fff;
 }
 
+@media screen and (min-width:992px ) and (max-width: 1200px){
+	.container{
+		width: 970px;
+	}
+	.item{
+		width: calc(100% / 2 - 30px);
+	}
+}
+@media screen (max-width: 992px)  and (min-width: 769px){
+	
+}
+@media screen and (max-width:768px ){
+	.section_3_1{
+		display: none;
+	}
+	.section_3_2{
+		width: 100%;
+	}
+	.container{
+		width: 100%;
+	}
+	.item{
+		width: calc(100% - 30px);
+	}
+}
+
