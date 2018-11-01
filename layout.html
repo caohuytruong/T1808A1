@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Layout</title>
+	<title>San Pham</title>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=vietnamese" rel="stylesheet">
 	<link rel="stylesheet" href="css/style1.css"/>
 
 </head>
@@ -28,11 +30,11 @@
 				<img src="Images\44738549_159970208291416_6912306570747445248_n.png">
 			</div>
 			<div class="sec2_2">
-				<span>Home</span> &emsp;
-				<span>Products</span> &emsp;
-				<span>Hot Deals</span> &emsp;
-				<span>About</span> &emsp;
-				<span>Contact</span> &emsp;
+				<span><a href="#" title="Home">Home</a></span> &emsp;
+				<span><a href="product.html" title="Products">Products</a></span> &emsp;
+				<span><a href="#" title="Hot Deals"> Hot Deals</a></span> &emsp;
+				<span><a href="#" title="About"> About</a></span> &emsp;
+				<span><a href="#" title="Contact"> Contact</a></span> &emsp;
 			</div>
 			<div class="sec2_3">
 				<img src="Images\44773985_297898354270047_1364986433969848320_n.png"> &emsp;
@@ -46,47 +48,70 @@
 		<div class="container">
 			<div class="sec3_1">
 				<div class="sec3_1_1">
-					<h3 class="tex">Categories</h3>
-					<h3>Man</h3> 
-					<h3>Women</h3> 
-					<h3>Childrens</h3> 
-					<h3>Hot Deals</h3>  
+					<h3 class="tex">Categories</h3> <br>
+					<h3><a href="#">Man</a></h3> <br>
+					<h3><a href="#">Woman</a></h3> <br>
+					<h3><a href="#">Childrens</a></h3> <br>
 				</div>
 
 				<div class="sec3_1_2">
-					<span><h3 class="tex">Price Filter</h3></span>
+					<span><h3 class="tex">Price Filter</h3></span> <br>
 					&emsp; <span>100$</span> &emsp; &emsp; &emsp; &emsp;
-					<span>1000$</span><br/>
-					<img src="Images\43657201_1863381647044548_787911591537410048_n.png">
-					<form >
+					<span>1000$</span><br>
+					<img src="Images\43657201_1863381647044548_787911591537410048_n.png"> <br>
+					<form > 
 					From:  <textarea rows="1" cols="5" name="min"></textarea> &emsp; &emsp;
-					To:  <textarea rows="1" cols="5" name="max"></textarea>
-					</form>
+					To:  <textarea rows="1" cols="5" name="max"></textarea> 
+					</form> <br>
 				</div>
 
 				<div class="sec3_1_3">
-					<span><h3 class="tex">Sizes</h3></span> &emsp;
-					<form>
-						<input type="checkbox" name="Small" value="on"> Small </br>
-						<input type="checkbox" name="Medium" value="on"> Medium </br>
-						<input type="checkbox" name="Large" value="on"> Large </br>
-						<input type="checkbox" name="X Large" value="on"> X Large </br> &emsp;
-					</form>
+					<h3 class="tex">Sizes</h3> &emsp;
+					<ul class="check">
+						<li>
+							<input id="size-small" type="checkbox"/>
+							<label for="size-small">Small</label>
+						</li> <br>
+						<li>
+							<input id="size-medium" type="checkbox"/>
+							<label for="size-medium">Medium</label>
+						</li> <br>
+						<li>
+							<input id="size-large" type="checkbox"/>
+							<label for="size-large">Large</label>
+						</li> <br>
+						<li>
+							<input id="size-xlarge" type="checkbox"/>
+							<label for="size-xlarge">Small</label>
+						</li> <br>
+					</ul>
 				</div>
 
 				<div class="sec3_1_4">
 					<span><h3 class="tex">Brands</h3></span> &emsp;
-					<form>
-						<input type="checkbox" name="Reebok" value="on"> Reebok </br>
-						<input type="checkbox" name="Adidas" value="on"> Adidas </br>
-						<input type="checkbox" name="Nike" value="on"> Nike </br>
-						<input type="checkbox" name="Active" value="on">Active </br> &emsp;
-					</form>
+					<ul class="check">
+						<li>
+							<input id="Reebok" type="checkbox"/>
+							<label for="Reebok">Reebok</label>
+						</li> <br>
+						<li>
+							<input id="Adidas" type="checkbox"/>
+							<label for="Adidas">Adidas</label>
+						</li> <br>
+						<li>
+							<input id="Nike" type="checkbox"/>
+							<label for="Nike">Nike</label>
+						</li> <br>
+						<li>
+							<input id="Active" type="checkbox"/>
+							<label for="Active">Active</label>
+						</li> <br>
+					</ul>
 				</div>
 			</div>
 
 			<div class="sec3_2">
-				<div class="3_2_1">
+				<div class="sec3_2_1">
 			
 					<div class="item" >
 						<img src="Images\Untitled-2.png"/>
@@ -106,44 +131,46 @@
 					<p><span class="it123">100$</span></p>
 				</div>
 			
-				<div class="item1" >
+				<div class="item" >
 					<img src="Images\Untitled-2.png"/>
 					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
 					<p><span class="it123">100$</span></p>
 				</div>
 
-				<div class="item1" >
+				<div class="item" >
 					<img src="Images\Untitled-3.png"/>
 					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
 					<p><span class="it123">100$</span></p>
 				</div>
 
-				<div class="item1" >
+				<div class="item" >
 					<img src="Images\Untitled-1.png"/>
 					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
 					<p><span class="it123">100$</span></p>
 				</div>
 			
-				<div class="item2" >
+				<div class="item" >
 					<img src="Images\Untitled-2.png"/>
 					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
 					<p><span class="it123">100$</span></p>
 				</div>
 
-				<div class="item2" >
+				<div class="item" >
 					<img src="Images\Untitled-3.png"/>
 					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
 					<p><span class="it123">100$</span></p>
 				</div>
 
-				<div class="item2" >
+				<div class="block item" >
 					<img src="Images\Untitled-1.png"/>
 					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
 					<p><span class="it123">100$</span></p>
 				</div>
 			</div>
 			<div class="sec3_2_2">
-				
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
 			</div>
 	</section>
 	
@@ -161,7 +188,7 @@
 				<span>
 					<form>
 						<img src="Images\44726369_192161761699639_2886659154708004864_n.png">
-						<input type="text" name="email">
+						<input type="email" name="email" placeholder="Type your email here">
 						<input type="button" name="Join us" value="Join us"/>
 					</form>
 				</span>
