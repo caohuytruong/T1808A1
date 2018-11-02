@@ -1,0 +1,17 @@
+var fontSize = ["x-Small", "small", "large", "medium", "xx-small", "x-large", "xx-large"];
+var index = 0;
+var tags = document.getElementsByClassName("fwb");
+
+setInterval(function() {
+	index = index % fontSize.length;
+
+	var color = "RED";
+
+	for(i=0;i<tags.length;i++){
+		tags[i].style.fontSize = fontSize[index];
+		tags[i].style.color = color;
+	}
+
+
+	index++;
+}, 500)
