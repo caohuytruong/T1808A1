@@ -5,28 +5,19 @@
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="css/style.css"/>
 		<script type="text/javascript">
-			var x= 5;
-			//console.log(x);
-			//x = "hello";
-			var y = "56gg7";
-			y = parseInt(y);// parseFloat()
-			if(isNaN(y)){
-				console.log("not a number");
-				y = 6;
-			}
-			
-			var z  = x+y;
-			console.log(z);
-
-			//alert(x);
+			// var z;
 			// do{
-			// 	x = confirm("Ban dong y voi dieu khoan?");
-			// }while(x == false);
-			
-			// var  y = prompt("dien vao ten cua ban");
-			// x = x+y;
-			// alert(x);
-
+			// 	z = confirm("ban da du 18 tuoi?");
+			// }while(z == false);
+			var x;
+			do{
+				x = prompt("Ten cua ban la gi?");
+			}while(x == null || x == "");
+			do{
+				var y = prompt("nam sinh:");
+				y = parseInt(y);
+			}while(isNaN(y) || y >= 2000);
+			alert("xin chao "+x);
 		</script>
 	</head>
 	<body>
