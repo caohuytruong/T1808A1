@@ -9,15 +9,25 @@
 			// do{
 			// 	z = confirm("ban da du 18 tuoi?");
 			// }while(z == false);
-			var x;
-			do{
-				x = prompt("Ten cua ban la gi?");
-			}while(x == null || x == "");
-			do{
-				var y = prompt("nam sinh:");
-				y = parseInt(y);
-			}while(isNaN(y) || y >= 2000);
-			alert("xin chao "+x);
+			// var x;
+			// do{
+			// 	x = prompt("Ten cua ban la gi?");
+			// }while(x == null || x == "");
+			// do{
+			// 	var y = prompt("nam sinh:");
+			// 	y = parseInt(y);
+			// }while(isNaN(y) || y >= 2000);
+			// alert("xin chao "+x);
+			// setTimeout(function(){
+			// 	alert("day la setTimeout");
+			// },3000);
+			x = 50;
+			var it = setInterval(function(){
+				if(x > 0){
+					x-=5;
+					console.log(x);
+				}
+			},5000);
 		</script>
 	</head>
 	<body>
