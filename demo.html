@@ -22,12 +22,31 @@
 			// 	alert("day la setTimeout");
 			// },3000);
 			x = 50;
-			var it = setInterval(function(){
-				if(x > 0){
-					x-=5;
-					console.log(x);
+			// var it = setInterval(function(){
+			// 	if(x > 0){
+			// 		x-=5;
+			// 		var z = random_number(); 
+			// 		//console.log(z);
+			// 		do{
+			// 			y = prompt("So du doan:");
+			// 			y = parseInt(y)	;
+			// 		}while(isNaN(y));
+			// 		thong_bao(y,z,it);
+			// 	}
+			// },2000);
+			//random_number();
+			function random_number(){
+				var a = parseInt(Math.random()*100);
+				return a;
+			}
+			function thong_bao(a,b,hh){
+				if(a == b){
+					alert("ban da trung thuong");
+					clearInterval(hh);
+				}else{
+					alert("Khong chinh xac");
 				}
-			},5000);
+			}
 		</script>
 	</head>
 	<body>
