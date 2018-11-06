@@ -1,0 +1,328 @@
+
+body{
+	background: #f4f6f8;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.center{
+	width: 1170px;
+	margin: 0 auto;
+}
+.top{
+	margin-left: 15px;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 5px;
+	background: white;
+}
+.top_left{
+	margin-left: 150px;
+  	margin-top: 15px;
+	float: left;
+}
+.mail{
+	float: left;
+}
+.phone{
+	margin-left: 10px;
+	float: left;
+}
+.top_right{
+	margin-right: 150px;
+	margin-top: 15px;
+	float: right;
+}
+.fb{
+	margin-left: 10px;
+ 	float: left; 
+}
+.twitter{
+	margin-left: 10px;
+	float: left;
+}
+.g{
+	margin-left: 10px;
+	float: left;
+}
+.instagram{
+	margin-left: 10px;
+	float: left;
+}
+.header{
+	width: 100%;
+	margin-left: 15px;
+	height: 100px;
+	margin-bottom: 20px;
+	background: white;
+}
+.header_left{
+	float: left;
+	margin-left: 150px;
+	margin-top: 25px;
+
+}
+.header_center{
+	margin-left: 30px;
+	float: left;
+}
+.list_bars{
+    list-style-type: none;
+    overflow: hidden;
+}
+.all_li{
+    float: left;
+}
+.all_a{
+    display: block;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+}        
+.header_right{
+	float: right;
+	margin-right: 150px;
+	margin-top: 25px;
+}
+.search{
+	margin-left: 20px;
+	float: left;
+	font-size: 25px;
+}
+.user{
+	margin-left: 20px;
+	float: left;
+	font-size: 25px;
+}
+.cart{
+	margin-left: 20px;
+	float: left;
+	font-size: 25px;
+}
+.container{
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 40px 0px;
+}
+.menu{ 
+	margin-left: 150px;
+	width: 17%;
+	height: 300px;
+	float: left;
+}
+.menu_1{
+	background-color: white;
+}
+li{ 
+  	list-style-type: none;
+}
+a{
+	display: block;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    padding: 3px;
+    text-decoration: none;
+}
+.menu_2{
+	text-align: center;
+	background-color: white;
+}
+.text_{
+	margin-left: 40px;
+}
+.menu_2 img{
+	width: 70%;
+}
+.menu_3{
+	height: 40%;
+	background-color: white;
+}
+li{
+	list-style: none;
+}
+
+label{
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.menu_4{
+	height: 40%;
+	background-color: white;
+}
+
+.product{
+	margin-top: 15px;
+	width: 70%;
+	height: auto;
+	float: right;
+}
+.item{
+	width: 30%;
+	height: auto;
+	float: left;
+	text-align: center;
+	background: #fff;
+}
+.item img{
+	width: 100%;
+	display: grid;
+}
+.item p{
+	margin-bottom: 20px;
+	padding: 0 10px;
+	font-size: 16px;
+}
+.item_1{
+	width: 30%;
+	height: auto;
+	float: left;
+	text-align: center;
+	background: #fff
+}
+.jacket{
+	margin-top: 20px;
+}
+.icon{
+	margin-left: 46px;
+	margin-top: 45px;
+}
+.globe{
+	margin-left: 20px;
+	float: left;
+	font-size: 10px;
+}
+.cart_plus{
+	margin-left: 20px;
+	float: left;
+	font-size: 10px;
+}
+.heart{
+	margin-left: 20px;
+	float: left;
+	font-size: 10px;
+}
+.group{
+	width: 75%;
+	float: right;
+	margin-right: 150px;
+	display : flex;
+	margin-bottom: 20px;
+	justify-content : space-between;
+}
+.loader{
+	margin-left: 60px;
+	background-color: white;
+	text-align: center;
+	width: 75%;
+	height: 50px;
+	display: grid;
+	margin-bottom: 5px;
+}
+.loader span{
+	padding:0 auto;
+	width: 5px;
+	height: 5px;
+	display: inline-block;
+	background-color: #ff5912;
+	border:1px solid #ff5912;
+	border-radius: 100%;
+	text-align: center;
+	margin-top: 23px;
+}
+.item_content{
+	float:left;
+	width: 100%;
+	background-color: #fff;
+}
+.new_feed{
+	margin-left: 200px;
+	float: left;
+	height: 100px;
+	width: 70%;
+	margin-bottom: 50px;
+	background: white;
+}
+.new_feed_left{
+	width: 40%;
+	float: left;
+}
+.left_1{
+	margin-top: 20px;
+	margin-left: 35px;
+	float: left;
+}
+.left_2{
+	float: right;
+	margin-right: 85px;
+	margin-top: 25px;
+}
+.new_feed_right{
+	width: 60%;
+	float: right;
+}
+.right_1{
+	float: left;
+	margin-left: 10px;
+	margin-top: 25px;
+}
+.right_1_1{
+	margin-top: 10px;
+	float: left;
+}
+.right_1_2{
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+.right_2{
+	margin-top: 25px;
+	margin-left: 150px;
+	float: left;
+	background-color: #ff5912;
+    width: 60px;
+    height: 20px;
+    padding: 15px;
+}
+.join{
+	margin-left: 5px;
+	margin-top: 0px;
+	color: white;
+}
+.footer{
+	margin-left: 15px;
+	width: 100%;
+	height: 150px;
+	float: left;
+	background-color: white;
+}
+.footer_left{
+	margin-left: 150px;	
+	margin-top: 50px;
+	float: left;
+}
+.footer_center{
+	float: left;
+	margin-top: 25px;
+	margin-left: 40px;
+}
+.footer_center_1{
+	float: left;
+}
+.footer_center_2{
+	float: left;
+}
+.footer_center_3{
+	float: left;
+}
+.footer_right{
+	margin-top: 35px;
+	margin-left: 120px;
+	float: left;
+}
