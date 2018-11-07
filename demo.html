@@ -4,7 +4,73 @@
 		<title>Day la trang demo</title>
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="css/style.css"/>
+
+	</head>
+	<body>
+		<button type="button" onclick="changeRed()">Red</button>
+		<button type="button" onclick="changeGreen()">Green</button>
+		<table id="tbID" onmouseenter="changeRed()" onmouseleave="changeGreen()">
+			<thead>
+				<th>Name</th>
+				<th>Email</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Le van A</td>
+					<td>Lva@gmail.com</td>
+				</tr>
+				<tr>
+					<td>Le van A</td>
+					<td>Lva@gmail.com</td>
+				</tr>
+			</tbody>
+		</table>
+		<button type="button" onclick="showTableHTML()">Start Game</button>
+
+		<div class="item item1" >
+			<img src="images/product1.png"/>
+			<p><a class="" href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
+			<p><span id="price-tag1">100$</span></p>
+		</div>
+		<div class="item item2" onmouseleave="" ondrag="alert('drag')">
+			<img src="images/product1.png"/>
+			<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
+			<p><span id="price-tag2">100$</span></p>
+		</div>
+		<br/>
+		<br/>
+		<form action="#" method="GET" name="form" enctype="multipart/form-data">
+			<input onkeydown="alert('keydown')" type="text" name="username" placeholder="Name" />
+			<input onkeypress ="alert('press')" type="text" name="username" placeholder="Name2" />
+			<input onkeyup ="alert('keyup')" type="text" name="username" placeholder="Name3" />
+			<select name="select" onchange="alert('change')">
+				<option value="0">No 0</option>
+				<option value="1">No 1</option>
+				<option value="2">No 2</option>
+			</select>	
+			<textarea cols="100" rows="10" oncopy="alert('copy');alert('Nho paste lai');" oncut="alert('cut')" onpaste="alert('paste')"></textarea>
+			<button type="submit" onclick="return confirm('are you sure?')">Submit</button>
+		</form>
 		<script type="text/javascript">
+			/* DOM */
+			
+			function showTableHTML(){
+				var obj = document.getElementById("tbID");
+				var html = obj.innerHTML;
+				//alert(html);
+				obj.classList.add("xx"); // Thêm class cho object
+				console.log(html);	
+				//obj.innerHTML = "<p>Hello</p>";	
+			}
+			function changeRed(){
+				var x = document.getElementById("tbID");
+				x.style.backgroundColor  = "red"; 
+			}
+			function changeGreen(){
+				var x = document.getElementById("tbID");
+				x.style.backgroundColor  = "green"; 
+			}
+			//END	
 			// var z;
 			// do{
 			// 	z = confirm("ban da du 18 tuoi?");
@@ -55,33 +121,5 @@
 			}
 			//startGame();
 		</script>
-	</head>
-	<body>
-		
-		<button type="button" onclick="startGame()">Start Game</button>
-
-		<div class="item item1" onmouseenter="alert('mouse enter')" >
-			<img src="images/product1.png"/>
-			<p><a class="" href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-			<p><span id="price-tag1">100$</span></p>
-		</div>
-		<div class="item item2" onmouseleave="" ondrag="alert('drag')">
-			<img src="images/product1.png"/>
-			<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-			<p><span id="price-tag2">100$</span></p>
-		</div>
-		<br/>
-		<br/>
-		<form action="#" method="GET" name="form" enctype="multipart/form-data">
-			<input onkeydown="alert('keydown')" type="text" name="username" placeholder="Name" />
-			<input onkeypress ="alert('press')" type="text" name="username" placeholder="Name2" />
-			<input onkeyup ="alert('keyup')" type="text" name="username" placeholder="Name3" />
-			<select name="select" onchange="alert('change')">
-				<option value="0">No 0</option>
-				<option value="1">No 1</option>
-				<option value="2">No 2</option>
-			</select>
-			<textarea cols="100" rows="10" oncopy="alert('copy')" oncut="alert('cut')" onpaste="alert('paste')"></textarea>
-		</form>
 	</body>
 </html>
