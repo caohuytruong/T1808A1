@@ -65,6 +65,13 @@ img{
 	text-align: left;
 	margin-top: 30px;
 }
+/*.menu input[type=checkbox]{
+	display: none;
+} 
+.menu a input[type=checkbox]:checked + label{
+	color: #ff5912;
+}*/
+
 .section_2_3{
 	float: left;
 	width: 30%;
@@ -84,7 +91,7 @@ img{
 }
 .block{
 	float:left;
-	width: calc(100% - 60px);/*kieu tinh toan cac phep tinh tang giam dai rong*/
+	width: calc(100% - 60px);
 	background-color: #ffffff;
 	margin-bottom: 30px;
 	padding: 30px;
@@ -118,7 +125,7 @@ img{
 	margin-right: 5px;
 	display: none;
 }
-.sizes li label:before{/*chinh phia truoc label lam an di nhung no van ton tai*/
+.sizes li label:before{
 	content: " ";
 	width: 3px;
 	height: 3px;
@@ -130,7 +137,7 @@ img{
 .sizes li input[type=checkbox]:checked + label{
 	color: #ff5912;
 }
-.sizes li input[type=checkbox]:checked + label:before{/*tich vao box va ca label*/
+.sizes li input[type=checkbox]:checked + label:before{
 	border:5px solid #ff5912;
 }
 .brands li{
@@ -171,7 +178,7 @@ img{
 }
 .exeem{
 	float:left;
-	width: calc(100% - 60px);/*kieu tinh toan cac phep tinh tang giam dai rong*/
+	width: calc(100% - 60px);
 	background-color: #ffffff;
 	margin-bottom: 30px;
 	padding: 30px;
@@ -180,8 +187,7 @@ img{
 	text-align: center;
 }
 .rows{
-	margin-top: 5px;
-	/*background-color: #ffffff;*/
+	margin-top: 5px;	
 }
 .circle span{
 	width: 10px;
@@ -208,11 +214,11 @@ img{
 	color: #ffb69e;
 }
 .section_4{
-	/*float: left;*/
+	float: left;
 	height: 120px;
 	margin-bottom: 100px;
 	background-color: #ffffff;
-	width: 1170px;
+	width: 85%;
 	margin-left: 90px;
 	margin-top: 100px;
 }
@@ -220,6 +226,7 @@ img{
 	margin-top: 50px;
 	float: left;
 	width: 50%;
+	text-indent: 20px;
 }
 #New-letter{
 	color : #ff5912;
@@ -234,6 +241,7 @@ img{
 .section_4_2_1{
 	text-align: left;
 	margin-top: 10px;
+	margin-left: 40px;
 }
 .section_4_2_2 a img{
 	margin-top: -30px;
@@ -281,7 +289,7 @@ img{
 	color: #ff5912;
 	font-size: 16px;
 }
-@media screen and (min-width: 992px) and (max-width: 1200px){
+/*@media screen and (min-width: 992px) and (max-width: 1200px){
 	.container{
 		width: 970px;
 		background-color: black;
@@ -289,4 +297,115 @@ img{
 	.item{
 		width: calc(100% / 2 -30px);
 	}
+}*/
+.section_3s{
+	float: left;
+	margin-top: 5px;
+	background-color: #ffffff;	
+}
+.section_3s_1{
+	float: left;
+	width: 30%;	
+}
+.hop{
+	margin-top: 10px;
+}
+.section_3s_1_1{
+	text-indent: 100px;
+	margin-top: 100px;
+}
+.hop1{	
+	float:left;
+	width: calc(100% / 3 - 30px);
+	text-align: center;
+	padding:0 15px 30px;
+	height: 265px;
+}
+.anh{
+	background-color: #f4f6f8;
+	float:left;
+	width: 100%;
+	height: 20%;
+	margin-top: 10px;
+	text-align: center;	
+}
+.section_3s_1_2_2 .anh img{
+	margin-top: 7px;
+}
+.section_3s_1_2{	
+	text-align: center;	
+}
+.section_3s_2{
+	float: left;
+	width: 70%;
+}
+#full{
+	font-size: 40px;	
+	margin-top: 100px;	
+	color: #ff5912;
+}
+.chu{	
+	margin-left: 100px;
+}
+#halfjacket{
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.chunho p{
+	margin-top: 10px;
+}
+.chu p img{
+	margin-top: 30px;
+}
+.chu .choo{
+	padding-top: 10px;
+}
+.choo input[type=checkbox]{
+	display: none;
+} 
+.choo input[type=checkbox]:checked + label{
+	color: #ff5912;
+}
+.oderss{
+	float: left;
+	margin-top: 50px;
+}
+.oderss a span img{
+	margin-bottom: -20px;
+}
+.section_4s{
+	float: left; 
+	text-align: center;
+}
+.section_4s_1{
+	width: 100%;
+}
+.section_4s_1_1{
+	margin-top: 100px;
+	margin-left: 150px;
+}
+.chu4{
+	margin-bottom: 25px;
+	font-size: 25px;	
+}
+.section_4s_2{
+	width: 100%;
+}
+.section_4s_2 .item{
+	float:left;
+	width: calc(100% / 4 - 140px);
+	text-align: center;	
+	height: 265px;
+	margin-top: 100px;
+}
+.section_4s_2 .item-content{
+	width: 160%;
+	height: 120%;
+}
+.section_4s_2 img{
+	margin-top: 30px;
+}
+.item1{
+	margin-left: 100px;
 }
