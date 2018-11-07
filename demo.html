@@ -9,7 +9,11 @@
 	<body>
 		<button type="button" onclick="changeRed()">Red</button>
 		<button type="button" onclick="changeGreen()">Green</button>
-		<table id="tbID" onmouseenter="changeRed()" onmouseleave="changeGreen()">
+		<select name="selectz" id="selectX" onchange="changeFont()">
+			<option value="Times new roman">Times new roman</option>
+			<option value="Arial">Arial</option>
+		</select>
+		<table id="tbID">
 			<thead>
 				<th>Name</th>
 				<th>Email</th>
@@ -69,6 +73,12 @@
 			function changeGreen(){
 				var x = document.getElementById("tbID");
 				x.style.backgroundColor  = "green"; 
+				x.style.fontFamily = 'Roboto';
+			}
+			function changeFont(){
+				var sl = document.getElementById("selectX");
+				var x = document.getElementById("tbID");
+				x.style.fontFamily = sl.value;
 			}
 			//END	
 			// var z;
