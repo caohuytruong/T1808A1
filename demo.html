@@ -22,19 +22,6 @@
 			// 	alert("day la setTimeout");
 			// },3000);
 			x = 50;
-			var it = setInterval(function(){
-				if(x > 0){
-					x-=5;
-					var z = random_number(); 
-					console.log(z);
-					do{
-						y = prompt("So du doan:");
-						y = parseInt(y)	;
-					}while(isNaN(y));
-					thong_bao(y,z,it);
-				}
-			},2000);
-			//random_number();
 			function random_number(){
 				var a = parseInt(Math.random()*100);
 				return a;
@@ -47,19 +34,54 @@
 					alert("Khong chinh xac");
 				}
 			}
+			function checkEvent(){
+				alert('check done 1');
+				alert('check done 2');
+			}
+			function startGame(){
+				var it = setInterval(function(){
+					if(x > 0){
+						x-=5;
+						var z = random_number(); 
+						console.log(z);
+						y = 0;
+						do{
+							y = prompt("So du doan:");
+							y = parseInt(y)	;
+						}while(isNaN(y));
+						thong_bao(y,z,it);
+					}
+				},2000);
+			}
+			//startGame();
 		</script>
 	</head>
 	<body>
 		
-		<div class="item item1">
+		<button type="button" onclick="startGame()">Start Game</button>
+
+		<div class="item item1" onmouseenter="alert('mouse enter')" >
 			<img src="images/product1.png"/>
 			<p><a class="" href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
 			<p><span id="price-tag1">100$</span></p>
 		</div>
-		<div class="item item2">
+		<div class="item item2" onmouseleave="" ondrag="alert('drag')">
 			<img src="images/product1.png"/>
 			<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
 			<p><span id="price-tag2">100$</span></p>
 		</div>
+		<br/>
+		<br/>
+		<form action="#" method="GET" name="form" enctype="multipart/form-data">
+			<input onkeydown="alert('keydown')" type="text" name="username" placeholder="Name" />
+			<input onkeypress ="alert('press')" type="text" name="username" placeholder="Name2" />
+			<input onkeyup ="alert('keyup')" type="text" name="username" placeholder="Name3" />
+			<select name="select" onchange="alert('change')">
+				<option value="0">No 0</option>
+				<option value="1">No 1</option>
+				<option value="2">No 2</option>
+			</select>
+			<textarea cols="100" rows="10" oncopy="alert('copy')" oncut="alert('cut')" onpaste="alert('paste')"></textarea>
+		</form>
 	</body>
 </html>
