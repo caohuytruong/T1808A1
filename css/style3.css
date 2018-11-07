@@ -248,8 +248,8 @@ img{
 	margin-right: 70px;
 }
 .section_5{
+	float: left;
 	height: 250px;
-	margin-bottom: 100px;
 	background-color: #ffffff;
 }
 .section_5_1{
