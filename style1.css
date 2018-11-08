@@ -192,7 +192,7 @@ a{
 	margin-top:10px;
 	float: right;
 }
-@media screen and (max-width=1200px) and (min-width=992px){
+@media screen and (max-width:1200px) and (min-width:992px){
 	.container{
 		width:950px;
 	}
@@ -204,7 +204,7 @@ a{
 		width:calc(100%/2-30px);
 	}
 }
-@media screen and  (max-width=992px){
+@media screen and  (max-width:992px){
 	.container{
 		width:740px;
 	}
