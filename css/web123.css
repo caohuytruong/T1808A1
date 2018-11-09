@@ -4,17 +4,17 @@
 }
 
 body{
-	/*font-family: 'Indie Flower', cursive;*/
+	/*font-family: 'Rambla', sans-serif;*/
 }
 .container{
-	width: 1170px;
+	width: 1100px;
 	margin: 0 auto;
 	display: flex;
 	height: 100%;
 }
 
 .container1{
-	width: 1170px;
+	width: 1100px;
 	margin: 0 auto;
 	height: 100%;
 }
@@ -23,7 +23,7 @@ body{
  	float: left;
 	height: 70px;
 	background-color: white;
-	margin-bottom: 10px;
+	margin-bottom: 2px;
 }
 
 .section_1_1{
@@ -31,6 +31,7 @@ body{
 	width: 50%;
  	height: 100%;
  	padding-top: 25px;
+ 	
 }
 
 .section_1_2{
@@ -41,6 +42,7 @@ body{
 	padding-top: 25px;
 	padding-right: 60px;
 	letter-spacing: 20px;
+
 }
 .section_2{
 	float: left;
@@ -62,6 +64,10 @@ body{
  	padding-left: 30px;
 }
 
+.section_2_2 span{
+	color: #34404b;
+	font-weight: 550;
+}
 
 .section_2_3{
 	float: left;
@@ -72,6 +78,7 @@ body{
 	padding-right: 60px;
 	letter-spacing: 35px;
  }
+
 
 .section_3{
 	height: 1000px;
@@ -98,8 +105,8 @@ body{
 .section h3{
 	float: left;
 	color: #ff5912;
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 18px;
+	font-weight: 550;
 	padding-left: 40px;
 	padding-top: 10px;
 }
@@ -118,13 +125,11 @@ body{
 .section_32{
 	float:left;
 	width:100%; 
-	height:15%;
+	height:18%;
 	background-color: white;
 	margin-bottom: 30px;
 }
-/*K3{
-	padding-top: 20px;
-}*/
+
 
 .K32{
 	padding-top: 20px;
@@ -205,30 +210,53 @@ body{
 	padding-left: 30px;
 	height: 97%;
 	padding-bottom: 15px;
-	/*background-color: green;*/
 }
 
 
 .item{
 	float:left;
-	width: /*calc(100% / 3 - 30px);*/250px;
+	width:250px;
 	text-align: center;
 	background-color: white;
 	margin-right: 30px;
 	margin-bottom: 30px;
-	height: /*calc(100% / 3 - 30px);*/ 300px;
+	height: 300px;
+}
+
+.item1{
+	float:left;
+	width:250px;
+	text-align: center;
+	background-color: white;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	height: 300px;
+}
+
+.item2{
+	float:left;
+	width:250px;
+	text-align: center;
+	background-color: white;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	height: 330px;
+	padding-top: 15px;
 }
 
 .item span{
 	color: #ff5912;
+	font-weight: 550;
 }
 
 .item a{
 	color: #34404b;
+	font-weight: 550;
 }
 
 .text_color{
 	color: #34404b;
+	font-weight: 550;
 }
 
 /*a{
@@ -261,30 +289,28 @@ padding-bottom: 10px;
 
 .section_4{
 	float: left;
-	height: 60px;
-	width: 1000px;
+	height: 100px;
+	width: 1065px;
 	margin-bottom: 100px;
-	margin-left: 50px;
-	margin-right: 200px;
+	margin-left: 90px;
+	background-color: white;
 }
 
 .section_4_1{
 	float: left;
-	width: 50%;
+	width: 55%;
 	height: 100%;
 	padding-left: 40px;
 	padding-top: 40px;
-	background-color: white;
 }
 
 .section_4_2{
 	float: left;
 	text-align: right;
-	width: 50%;
+	width: 45%;
 	height: 100%;
 	padding-top: 38px;
 	padding-right: 50px;
-	background-color: white;
 	margin-right: 100px;
 }
 
@@ -354,6 +380,7 @@ padding-bottom: 10px;
 }
 
 
+
 .section_5_3{
 	float: left;
    height: 100%;
@@ -368,8 +395,8 @@ padding-bottom: 10px;
 .section_6{
 	height: 600px;
 	float: left;
-	margin-top: 10px;
-	/*background: pink;*/
+	margin-top: 3px;
+	background-color: white;
 
 }
 
@@ -449,14 +476,12 @@ padding-bottom: 10px;
 	width: 80%;
 	float: left;
 	padding-top: 53px;
-	/*background-color: green;*/
 }
 
 .text63{
 	float: left;
 	height: 22%;
 	width: 80%;
-	/*background-color: yellow;*/
 	padding-top: 15px;
 }
 
@@ -464,29 +489,24 @@ padding-bottom: 10px;
     height: 35%;
     width: 80%;
 	float: left;
-	/*background-color: black;*/
 }
 
 .text64_1{
 	float: left;
 	width: 50%;
 	height: 100%;
-	/*background-color: pink;*/
 }
 
 #text5{
 	font-size: 18px;
 	color: #34404b;
-	/*padding-top: 10px;*/
 	font-weight: 900;
 }
 
 .text64_2{
 	float: left;
 	width: 50%;
-	height: 100%;
-	/*background-color: red;*/
-	
+	height: 100%;	
 }
 
 .spa{
@@ -501,7 +521,7 @@ padding-bottom: 10px;
 	text-align: center;
 	padding-top: 10px;
 	margin-top: -10px;
-	border-radius: 30%;
+	border-radius:20px 20px 20px 20px;
 }
 
 #text7{
@@ -516,7 +536,6 @@ padding-bottom: 10px;
 }
 
 .text2{
-	/*padding-top: 150px;*/
 	font-size: 14px;
 	color: #495662;
 }
@@ -581,13 +600,11 @@ padding-bottom: 10px;
 #text72{
 	font-weight: 400;
 	font-size: 14px;
-	color: #495662;
+	color: #5988b4;
 	padding-left: 350px;
 }
 
-#text77{
-	
-}
+
 .section_8{
 	float: left;
 	height: 400px;
@@ -606,10 +623,12 @@ padding-bottom: 10px;
 
 .item1 span{
 	color: #ff5912;
+	font-weight: 550;
 }
 
 .item1 a{
 	color: #34404b;
+	font-weight: 550;
 }
 
 
@@ -630,8 +649,15 @@ padding-bottom: 10px;
 	.section_3 {
 		height: 1800px;
 	}
+
+	.section_3_2_2 {
+		float: left;
+	}
+
 	.section_4 {
-		width: 
+		width: 970px;
+		margin-right: 0px;
+		margin-left: 0px;
 	}
 	.section_5_21{
 	float:left;
@@ -649,5 +675,294 @@ padding-bottom: 10px;
 	width: 35%;	
 	}
 }
+
+.section_80{
+	float: left;
+	height: 160px;
+	text-align: center;
+	width: 100%;
+	/*margin-bottom: 100px;*/
+	padding-left: 500px;
+
+}
+
+.section_9{
+	float: left;
+	height: 400px;
+	/*background-color: pink;*/
+	padding-left: 360px;
+}
+
+.section_9 input{
+	font-size: 25px;
+}
+
+.section9{
+	float: left;
+    width: 100%;
+    height: 60px;  
+    margin-bottom: 5px;
+}
+
+.section_10{
+	float: left;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 40px;
+	margin-left: 430px;
+}
+
+/*.section_10 li{
+	float: left;
+	width: 100%;
+}
+.section_10 input[type=checkbox]{
+	margin-right: 10px;
+	display: none;
+}
+
+
+
+.section_10 li label:before{
+	content: " ";
+	width: 10px;
+	height: 10px;
+	border:2px solid white;
+	background-color: #1860ad;
+	border-radius: 100%;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+
+.section_10 li{
+	list-style: none;
+}*/
+
+.v1{
+	float: left;
+	height: 12px;
+	width: 12px;
+	border: 1px solid #c8c9ca;
+	border-radius: 100%;
+	margin-right: 7px;
+}
+
+.v2{
+	float: left;
+	height: 8px;
+	width: 8px;
+	background-color: #1860ad;
+	border-radius: 100%;
+	margin: 2px;
+}
+
+#text10{
+	color: #7b7b7b;
+}
+
+#text10_2{
+	margin-left: 20px;
+	color: #7b7b7b;
+}
+
+
+.sec11_1{
+	float: left;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+.text11_1{
+	float: left;
+	width: 150px;
+	height: 30px;
+	border: 2px solid #3465b7;
+	margin-left: 470px;
+	border-radius: 11px 11px 11px 11px;
+	background-color: #3465b7;
+	padding-top: 10px;
+}
+
+
+#text11{
+	padding-left: 50px;
+	color: white;
+}
+
+.sec11_2{
+	float: left;
+	width: 100%;
+	height: 40px;
+	padding-left: 490px;
+	margin-bottom: 60px;
+
+}
+
+#text12{
+	color: #334b91;
+	font-weight: 400;
+}
+
+
+.section_111{
+	float: left;
+	width: 100%;
+	height: 600px;
+	background-image: url(../images/anhnen.png);
+	
+}
+
+.section_11_1{
+	float: left;
+	width: 50%;
+	height: 100%;
+	
+}
+
+.img11{
+	float: left;
+	height: 100%;
+	width: 18%;
+}
+
+
+.text13{
+	float: left;
+	height: 100%;
+	width: 82%;
+}
+
+.text14{
+	color: #34404b;
+	font-size: 15;
+	font-weight: 550;
+}
+
+.text15{
+	color: #ff5912;
+	font-size: 15;
+	font-weight: 550;
+}
+
+.section_11_2{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.sec13{
+width: 1070px;
+height: 3%;
+background-color: white;
+text-align: center;
+padding-bottom: 10px;
+margin-bottom: 100px;
+margin-top: 50px;
+}
+
+.section_14{
+	float: left;
+	height: 100px;
+	width: 1000px;
+	margin-left: 90px;
+}
+
+.sec14_1{
+	float: left;
+	height: 100%;
+	width: calc(59% - 30px);
+	margin-right: 30px;
+	background-color: white;
+}
+
+.sale{
+	float: left;
+	height: 100%;
+	width: 20%;
+	padding-top: 10px;
+	padding-left: 45px;
+}
+
+.text14_2{
+	float: left;
+	height: 100%;
+	width: 40%;
+	padding-top: 25px;
+}
+
+#text_Half{
+	float: left;
+	color: #495662;
+	font-size: 13px;
+}
+
+#text_full{
+	float: left;
+	color: #34404b;
+	font-size: 23px;
+	font-weight: 600;
+
+}
+
+.giohang3{
+	float: left;
+	height: 100%;
+	width: 30%;
+	padding-top: 35px;
+}
+
+#so120{
+	color: #ff5912;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+#dola{
+	color: #ff5912;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.sec14_2{
+	float: left;
+	height: 100%;
+	width: 39%;
+	background-color: white;
+	text-align: center;
+}
+
+#adv{
+	color:#34404b;
+	font-weight: 400;
+}
+
+#area{
+	color: #ff5912;
+}
+
+#so470{
+	color: #b5b9bd;
+	font-size: 14px;
+}
+
+#text74{
+	font-weight: 800;
+	font-size: 27px;
+	color: #ff5912;
+	padding-left: 460px;
+	
+}
+
+.section_16{
+	float: left;
+	width: 1000px;
+	margin-left: 90px;
+	height: 200px;
+	margin-bottom: 80px;
+	margin-top: 30px;
+}
+
 
 

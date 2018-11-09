@@ -1,0 +1,152 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+        // var x= 10;
+        // console.log(x);
+        // x = "Hello";
+        // alert(x); //thông báo giá trị. Không có giá trị trả về 
+
+
+
+        // x = confirm("Ok?"); //nhận định lại có chắc chắn hay k? Giá trị trả về là true hoặc false
+        // console.log(x);
+
+
+
+        // x = prompt("Điền vào tên của bạn") //Điền vào theo yêu cầu. Giá trị trả về = giá trị nhập hoặc NULL hoặc khoảng trống 
+        // console.log(x);
+
+
+
+        // var y = "World"
+        // x = x+y; //Nối 2 chuỗi
+        // alert(x);
+
+
+
+        // var z = "6";
+        // z = parseInt(z); //Biến chuỗi thành số nguyên. Nếu z không là số thì sẽ hiển thị NaN: Not a number
+        // z = parseFloat(z); //Biến chuỗi thành số thực. Nếu z không là số thì sẽ hiển thị NaN: Not a number
+        // console.log(z);
+
+
+
+        // var t = "ASD"
+        // t = parseInt(t);
+        // if(isNaN(t)){ //Kiểm tra xem giá trị NaN có phải là số không. Nếu ko sẽ gán giá trị = 10, nếu t = "21ASD" thì sau thuật toán t = 21.
+        //     console.log("not a number")
+        //     t = 10
+        // }
+        // console.log(t);
+        
+            // do{
+            //     var a = prompt("Điền tên bạn: ");
+            //   }while(a==null||a=="");
+            // alert("xin chào " +a);
+
+        // a = prompt("Nhap ten");
+        // setTimeout(function(){ //setTimeout là hàm thực hiện ... sau time nhập vào
+        //     alert("Xin chao " +a);
+        // },2000);
+    
+
+
+        // setInterval(function(){
+        //     alert("Được đẹp trai");
+        // },2000);
+
+
+
+    //     x = 50;
+    //     function startgame(){
+    //     var it = setInterval(function(){
+    //         if(x>0){
+    //             x -= 3;
+    //         }
+        
+    //             var y = prompt("Điền số: ");
+            
+    //         if(y==x)
+    //             {
+    //             alert("Được đẹp trai");
+    //             }
+    //         else{
+    //             alert("Toàn oc cho");
+              
+    //         }
+    //          clearInterval(it);         
+    //     },3000);
+    // }
+        
+
+
+
+
+
+
+    </script>
+    <style type="text/css">
+    
+    #tbID{
+        margin-left: 600px;
+        margin-top: 200px;
+    }
+
+    button{
+        margin-left: 400px;
+        margin-top: 100px;
+        background-color: gray;
+
+    }
+
+    </style>
+    </head>
+    <body style="background-color: #f4f6f8">
+        <button type="button" onclick="Day()">Day</button>
+        <button type="button" onclick="Night()">Night</button>
+    
+        <span id="tbID">Akatsuki Sasori</span>
+    
+    <select onchange="select" id="tbID" name="Changed" >
+        <option value="time new roman" onclick="A()" >Time new roman</option>
+        <option value="arial" onclick="B()" >Arial</option>
+    </select>
+
+    </body>
+</html>
+
+
+<script type="text/javascript">
+
+    function Day(){
+        var x = document.getElementById("tbID");
+        x.style.backgroundColor = "white";
+        x.style.color = "black";
+    }
+    function Night(){
+        var x = document.getElementById("tbID");
+        x.style.backgroundColor = "black";
+        x.style.color = "white";
+        // x.style.fontFamily = "time new roman";
+    }
+
+    function A(){
+            var x = document.getElementById("tbID");
+             x.style.fontFamily = "time new roman";
+    }
+
+     function B(){
+             var x = document.getElementById("tbID");
+             x.style.fontFamily = "Arial";
+    }
+
+    var obj = document.getElementById("tbID");
+    var html = obj.innerHTML;
+    console.log(html);
+</script>
+
+
+
