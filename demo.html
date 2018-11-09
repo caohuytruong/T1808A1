@@ -53,10 +53,21 @@
 				<option value="1">No 1</option>
 				<option value="2">No 2</option>
 			</select>	
-			<textarea cols="100" rows="10" oncopy="alert('copy');alert('Nho paste lai');" oncut="alert('cut')" onpaste="alert('paste')"></textarea>
-			<button type="submit" onclick="return confirm('are you sure?')">Submit</button>
+			<button onclick="btn(this)">Click</button>
+			<textarea cols="100" rows="10" oncopy="thongBao(this)" oncut="alert('cut')" onpaste="alert('paste')"></textarea>
+			<button id="btn" type="submit" onclick="return confirm('are you sure?')" disabled>Submit</button>
 		</form>
 		<script type="text/javascript">
+			var btn  = document.getElementById("btn");
+			btn.removeAttribute("disabled");
+			function thongBao(e){
+				alert(e.value);
+			}
+
+			function btn(el){
+				console.log(el);
+			}
+
 			/* DOM */
 			
 			function showTableHTML(){
