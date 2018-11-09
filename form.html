@@ -25,8 +25,9 @@
 		<input type="range" name="range" value="" placeholder="range" class="input-text" /><br/>
 		<input type="checkbox" id="checkbox" name="checkbox" class="input-text" />
 		<label for="checkbox">Checkbox</label><br/>
-		<input type="radio" name="radio" value="1" class="input-text" />
-		<input type="radio" name="radio" value="2" class="input-text" /><br/>
+		<input type="radio" name="radio" value="1" id="input-radio" />
+		<label for="input-radio">Radio</label>
+		<br/>
 		<select name="select" class="slect-box">
 			
 			<option value="1">number 1</option>
@@ -44,6 +45,7 @@
 	<script type="text/javascript">
 		function checkForm() {
 			var inputs = document.getElementsByClassName("input-text");
+			var count = 0;
 			for(var i=0;i<inputs.length;i++){
 				var text = inputs[i].value;
 				if(text.length < 1){
@@ -52,10 +54,17 @@
 					//inputs[i].nextElementSibling.style.display = "block";
 					
 					inputs[i].outerHTML =  txt;
+					count++;
 				}
 			}
-			return false;
+
+			if(count > 0){
+				return false;
+			}
+			return true;
+			
 		}
+		var radio = document.getElementById("input-radio");
 	</script>
 	<style type="text/css">
 		.invalid{border:1px solid red;}

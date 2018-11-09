@@ -62,7 +62,7 @@ span{
 	width: 100%;
 	padding: 5px 0;
 }
-.sizes input[type=checkbox]{
+.sizes input[type=radio]{
 	margin-right: 5px;
 	display: none;
 }
@@ -75,10 +75,10 @@ span{
 	display: inline-block;
 	margin-right: 10px;
 }
-.sizes li input[type=checkbox]:checked + label{
+.sizes li input[type=radio]:checked + label{
 	color: #ff5912;
 }
-.sizes li input[type=checkbox]:checked + label:before{
+.sizes li input[type=radio]:checked + label:before{
 	border:5px solid #ff5912;
 }
 .section_3_2{
@@ -137,3 +137,16 @@ span{
 	}
 }
 
+.box-star{
+	float: left;
+	width: 68px;
+	height: 23px;
+	background-image: url(../images/star-off.png);
+	background-repeat: repeat-x;
+}
+.box-star .star{
+	float: left;
+	height: 23px;
+	background-image: url(../images/star-on.png);
+	background-repeat: repeat-x;
+}
