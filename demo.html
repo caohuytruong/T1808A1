@@ -7,6 +7,14 @@
 
 	</head>
 	<body>
+		<div class="menu" onmouseenter="showMenu(this)" onmouseleave="hideMenu(this)">
+			<a href="#">HOME</a>
+			<ul>
+				<li>HOME1</li>
+				<li>HOME2</li>
+				<li>HOME3</li>
+			</ul>
+		</div>
 		<button type="button" onclick="changeRed()">Red</button>
 		<button type="button" onclick="changeGreen()">Green</button>
 		<select name="selectz" id="selectX" onchange="changeFont()">
@@ -30,6 +38,44 @@
 				</tr>
 			</tbody>
 		</table>
+
+		<div class="box">
+			<div class="box-content"></div>
+			<div class="box-content2"></div>
+		</div>
+
+		<style type="text/css">
+			.box{
+				position: relative;
+				width: 400px;
+				height: 400px;
+				float: left;
+				margin-left: 150px;
+				background-color: green;
+			}
+			.box-content{
+				float: left;
+				width: 50px;
+				height: 50px;
+				background-color: red;
+				position: absolute;
+				top:100px;
+				left: 100px;
+				z-index: 10;
+			}
+			.box-content2{
+				float: left;
+				width: 150px;
+				height: 150px;
+				background-color: pink;
+				position: fixed;
+				top:100px;
+				left: 100px;
+				z-index: 9;
+			}
+		</style>
+
+
 		<button type="button" onclick="showTableHTML()">Start Game</button>
 
 		<div class="item item1" >
@@ -53,15 +99,50 @@
 				<option value="1">No 1</option>
 				<option value="2">No 2</option>
 			</select>	
-			<button onclick="btn(this)">Click</button>
+			
 			<textarea cols="100" rows="10" oncopy="thongBao(this)" oncut="alert('cut')" onpaste="alert('paste')"></textarea>
-			<button id="btn" type="submit" onclick="return confirm('are you sure?')" disabled>Submit</button>
+			<button id="btn1" type="submit" onclick="return confirm('are you sure?')" disabled><span>Submit</span></button>
 		</form>
+
+		<button type="button" class="active" onclick="fade(this)">Click</button>
+		<div id="box-text">
+			The removeAttribute() method removes the specified attribute from an element.
+
+The difference between this method and the removeAttributeNode() method is that the removeAttributeNode() method removes the specified Attr object, while this method removes the attribute with the specified name. The result will be the same. Also this method has no return value, while the removeAttributeNode() method returns the removed attribute, as an Attr object.
+		</div>
+		
+		<style>
+		.menu{position: relative;}
+			.menu ul{display: none;position: absolute;}
+			.menu.active ul{display: block};
+		</style>
 		<script type="text/javascript">
-			var btn  = document.getElementById("btn");
-			btn.removeAttribute("disabled");
+			function showMenu(e){
+				e.classList.add("active");
+			}
+			function hideMenu(e){
+				e.classList.remove("active");
+			}
+
+			var btn1  = document.getElementById("btn1");
+			btn1.removeAttribute("disabled");
 			function thongBao(e){
 				alert(e.value);
+			}
+			function fade(y){
+				var x = document.getElementById("box-text");
+				// if(x.style.display == "none"){
+				// 	x.style.display = "block";
+				// }else{
+				// 	x.style.display = "none";
+				// }
+				if(y.classList.contains("active")){
+					y.classList.remove("active");
+					x.style.display = "none";
+				}else{
+					x.style.display = "block";
+					y.classList.add("active");
+				}
 			}
 
 			function btn(el){
