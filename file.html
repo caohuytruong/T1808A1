@@ -4,10 +4,95 @@
 	<head>
 		<title>Nghich ti thoi</title>
 		<meta charset="UTF-8"/>
+		<!-- <script type="text/javascript">
+			var x =5;
+			console.log(x);
+			x = "hello";
+			console.log(x);
+			alert("Hello World"); //dùng để thông báo
+			// confirm("OK?");
+			do {
+				x = confirm("Đồng ý không?");
+			} while (x == false);
+
+			x = prompt("điền vào tên của bạn:");
+			console.log(x);
+			var y = "6";
+			y = parseInt(y); //parseFloat()
+			if (isNaN(y)) {
+				console.log("not a number");
+				y=6;
+			}
+			var z = x+y;
+		</script> -->
+		<!-- <script type="text/javascript">
+			var y;
+			do{
+				x = confirm("Mày đủ 18+ chưa?");
+			} while(x == false);
+			var x;
+			do{
+				x = prompt("Điền tên của bạn vào đây:");
+				console.log(x);
+			} 
+			while(x == null || x == "");
+			setTimeout(
+				function(){
+					alert("Hello "+x);
+				},3000);
+			var x = 50;
+			var y;
+			
+			var it = setInterval (function(){
+				
+				if (x>0) {
+					x--;
+					var z = parseInt(Math.random()*100);
+					console.log(x);
+				}
+				do{
+					y = prompt("Đố mày biết đang chạy tới số mấy");
+					y = parseInt(y);
+				} while(isNaN(y));
+				if (x == y) {
+					alert("Đúng Rồi");
+					clearInterval(it);
+				} else if (y != x && y != "" && y != null) 
+				{
+					alert("Sai rồi");
+				}
+					if (y == "" || y == null) 
+					{
+						alert("nhập đi nhé");
+					}
+				clearInterval(x);
+				
+			},1000)
+
+			do{
+				var y = prompt("Mày sinh năm bao nhiêu?");
+				y = parseInt(y);
+			}while(isNaN(y) || y > 2000);
+			setTimeout(
+				function(){
+				alert("Đây là setTimeout");
+				prompt("Nhap ten");
+			},3000)
+		</script> -->
 	</head>
 	
 	<body>
-		<h1>Chi la 1 dong chu to nhat</h1>
+		<!-- <form>
+			User name:
+			<input type="text" name="Username" placeholder="User Name">
+			Email:
+			<input type="email" placeholder="email@example.comil">
+			Password:
+			<input type="password" placeholder="Password">
+			<button type="submit" onclick="submit()">Submit</button>
+		</form> -->
+		
+		<!-- <h1>Chi la 1 dong chu to nhat</h1>
 		<h2>Dong nay to thu 2</h2>
 		<h3>dong nay cung be nhung khong be lam</h3>
 		<h4>dong nay be hon dong tren 1 ti</h4>
@@ -18,7 +103,7 @@
 		<u>Chữ trong này là chữ gạch chân</u>
 		<del>Chữ gạch ngang </del>
 		<ins>giống cái <u> </ins>
-		<!--this is comment -->
+		this is comment 
 		<strong>Strong text</strong><br/>
 		<sub>Sub text</sub><br/>
 		<sup>Sup text</sup>
@@ -41,7 +126,48 @@
 	<a href="mailto:ttthhhaaannnggg@gmail.com" title="Send mail"><p>Send mail</p></a><br/>
 	<a href="Cat.jpg" title="Show Image"><p>Show Image</p></a><br/>
 	<a href="mp3/cai.gi.cung.het (original).mp3" title="Download"><p>Download</p></a><br/>
-	<img src="Images/Cat.jpg"/><br/>
+	<img src="Images/Cat.jpg"/><br/> -->
+
+		<button type="button" onclick="ChangeDay()">Day</button>
+		<button type="button" onclick="ChangeNight()">Night</button>
+		<select name="selectX" id="selectX" onchange="Changefont()">
+			<option value="Times new roman">Times new roman</option>
+			<option value="Arial">Arial</option>
+		</select>
+		
+		<div class="id111" id="form">
+		<p> Akdasjdws </p>
+		</div>
+
+	
 	</body>
 
+	<script type="text/javascript">
+		function showTableHTML(){
+			var obj = document.getElementById('form');
+			var html = obj.innerHTML;
+		}
+		
+
+		function ChangeDay(){
+			var x = document.getElementById("form");
+			x.style.backgroundColor = "blue";
+			var obj = document.getElementById("form");
+		}
+		function ChangeNight(){
+			var x = document.getElementById("form");
+			x.style.backgroundColor = "pink";
+		}
+		function Changefont(){
+			var x = document.getElementById("form");
+			var sl = document.getElementById("selectX")
+			x.style.fontFamily = sl.value;
+			x.style.backgroundColor = "green";
+		}
+	</script>
+
 </html>
+
+<!-- nextElementSibling
+outerHTML
+innerText không có outerText -->

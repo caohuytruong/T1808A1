@@ -145,7 +145,7 @@ label{
 .sec4_1{
 	float: left;
 	width: 50%;
-	padding: 25px 0;
+	padding: 48px 0;
 	background-color: white;
 }
 .sec4_1_1{
@@ -168,7 +168,7 @@ label{
 .sec4_2{
 	float: left;
 	width: 50%;
-	padding: 27px 0;
+	padding: 41.5px 0;
 	text-align: right;
 	background-color: white;
 }
@@ -377,7 +377,6 @@ a
 .content_6_2_2_1{
 	float: left;
 	width: 40%;
-	border-right: 1.5px solid #f4f6f8;	
 }
 .content_6_2_2_2{
 	width: calc(60% - 50px);
