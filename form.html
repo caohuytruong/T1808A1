@@ -4,14 +4,24 @@
 	<title>Form Demo</title>
 </head>
 <body>
-	<form method="GET" action="#" name="form_data" class="form" enctype="multipart/form_data">	
-		<label for="user_name">User name</label>
-		<input type="text" id="user_name" name="username" value="" placeholder="User name" class="input-text" /><br/>
-		<label>Email</label>
-		<input type="email" name="email" value="" placeholder="Email" class="input-text" /><br/>
-		<input type="number" name="number" value="" placeholder="Number" min="2" max="10" value="2" class="input-text" /><br/>
-		<input type="color" name="color" value="" placeholder="Color" class="input-text" /><br/>
-		<input type="date" name="datetime" value="" placeholder="datetime" class="input-text" /><br/>
+	<form method="GET" action="#" name="form_data" class="form" enctype="multipart/form_data">
+		<div class="form-group">	
+			<label for="user_name">User name</label>
+			<input type="text" cl id="user_name" name="username" value="" placeholder="User name" class="input-text" />
+		
+			<br/>
+		</div>
+		<div class="form-group">
+			<label>Email</label>
+			<input type="email" name="email" value="" placeholder="Email" class="input-text" />
+			
+			<br/>
+		</div>
+		<div class="form-group">
+			<input type="number" name="number" value="" placeholder="Number" min="2" max="10" value="2" class="input-text" />
+			<br/>
+		</div>
+		<input type="date" name="datetime" value="" placeholder="datetime"  /><br/>
 		<input type="range" name="range" value="" placeholder="range" class="input-text" /><br/>
 		<input type="checkbox" id="checkbox" name="checkbox" class="input-text" />
 		<label for="checkbox">Checkbox</label><br/>
@@ -23,13 +33,32 @@
 			<option value="2">number 2</option>
 			<option value="3">number 3</option>
 		</select>
-		<select name="select2" multiple class="slect-box">
+		<select name="select2" id="aaa" multiple class="slect-box">
 			
 			<option value="1">number 1</option>
 			<option value="2">number 2</option>
 			<option value="3">number 3</option>
 		</select>
-		<button type="submit">Dang nhap</button>
+		<button type="submit" onclick="return checkForm();">Dang nhap</button>
 	</form>
+	<script type="text/javascript">
+		function checkForm() {
+			var inputs = document.getElementsByClassName("input-text");
+			for(var i=0;i<inputs.length;i++){
+				var text = inputs[i].value;
+				if(text.length < 1){
+					inputs[i].classList.add("invalid");
+					var txt = inputs[i].outerHTML+'<p style="color:red"><i><small>Chưa nhập thông tin</small></i></p>';
+					//inputs[i].nextElementSibling.style.display = "block";
+					
+					inputs[i].outerHTML =  txt;
+				}
+			}
+			return false;
+		}
+	</script>
+	<style type="text/css">
+		.invalid{border:1px solid red;}
+	</style>
 </body>
 </html>
