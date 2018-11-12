@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=vietnamese" rel="stylesheet">
 	<link rel="stylesheet" href="css/style1.css"/>
-
+	<script type="text/javascript" src="Js/data.json"></script>
 </head>
 <body>
 	<section class="section sec1">
@@ -111,66 +111,15 @@
 			</div>
 
 			<div class="sec3_2">
-				<div class="sec3_2_1">
+				<div class="sec3_2_1" id="product">
 			
-					<div class="item" >
-						<img src="Images\Untitled-2.png"/>
-						<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-						<p><span class="it123">100$</span></p>
-					</div>
-		
-				<div class="item">
-					<img src="Images\Untitled-2.png"/>
-					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-					<p><span class="it123">100$</span></p>
+				
 				</div>
-
-				<div class="item">
-					<img src="Images\Untitled-1.png"/>
-					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-					<p><span class="it123">100$</span></p>
+				<div class="sec3_2_2">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
 				</div>
-			
-				<div class="item" >
-					<img src="Images\Untitled-2.png"/>
-					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-					<p><span class="it123">100$</span></p>
-				</div>
-
-				<div class="item" >
-					<img src="Images\Untitled-3.png"/>
-					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-					<p><span class="it123">100$</span></p>
-				</div>
-
-				<div class="item" >
-					<img src="Images\Untitled-1.png"/>
-					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-					<p><span class="it123">100$</span></p>
-				</div>
-			
-				<div class="item" >
-					<img src="Images\Untitled-2.png"/>
-					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-					<p><span class="it123">100$</span></p>
-				</div>
-
-				<div class="item" >
-					<img src="Images\Untitled-3.png"/>
-					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-					<p><span class="it123">100$</span></p>
-				</div>
-
-				<div class="block item" >
-					<img src="Images\Untitled-1.png"/>
-					<p><a href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-					<p><span class="it123">100$</span></p>
-				</div>
-			</div>
-			<div class="sec3_2_2">
-				<span>&nbsp;</span>
-				<span>&nbsp;</span>
-				<span>&nbsp;</span>
 			</div>
 	</section>
 	
@@ -230,5 +179,17 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		var y = '';
+		var product = x.data;
+		for (var i = 0; i < product.length; i++){
+		y+= 	'<div class="item" >';
+		y+=		'<img src="'+product[i].img+'"/>';
+		y+=		'<p><a href="#" title="'+product[i].name+'">'+product[i].name+'</a></p>';
+		y+=		'<p><span class="it123">'+product[i].price+'</span></p>';
+		y+=		'</div>';
+		}
+		document.getElementById("product").innerHTML = y;
+	</script>
 </body>
 </html>
