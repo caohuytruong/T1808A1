@@ -92,14 +92,15 @@
 		// }
 		
 			var y= '';
-			for (var i =0; i < x.length; i++) {
+			var products = x.data;
+			for (var i =0; i < products.length; i++) {
 				
 				y += '<div class="item item1">';
 					y+= '<div class="item-content">';
-					y+=	'	<img src="images/'+x[i].image+'"/>';
-					y+=	'	<p><a class="" href="#" title="'+x[i].name+'">';
-					y+= x[i].name+'</a></p>';
-					y+=	'	<p><span id="price-tag1">'+x[i].price+'</span></p>';
+					y+=	'	<img src="'+products[i].image+'"/>';
+					y+=	'	<p><a class="" href="#" title="'+products[i].name+'">';
+					y+= products[i].name+'</a></p>';
+					y+=	'	<p><span id="price-tag1">'+products[i].price+'</span></p>';
 					y+=	'</div>'
 					y+= '</div>';
 			}
