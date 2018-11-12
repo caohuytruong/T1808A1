@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/fontawesome/css/all.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" src="data.json"></script>
 </head>
 <body>
 	<section class="section section_1">
@@ -67,49 +68,8 @@
 				</div>
 			</div>
 			<div class="section_3_2">
-				<div class="row">
-					<div class="item item1">
-						<div class="item-content">
-							<img src="images/product1.png"/>
-							<p><a class="" href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-							<p><span id="price-tag1">100$</span></p>
-						</div>
-					</div>
-					<div class="item item1">
-						<div class="item-content">
-							<img src="images/product1.png"/>
-							<p><a class="" href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-							<p><span id="price-tag1">100$</span></p>
-						</div>
-					</div>
-					<div class="item item1">
-						<div class="item-content">
-							<img src="images/product1.png"/>
-							<p><a class="" href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-							<p><span id="price-tag1">100$</span></p>
-						</div>
-					</div>
-					<div class="item item1">
-						<div class="item-content">
-							<img src="images/product1.png"/>
-							<p><a class="" href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-							<p><span id="price-tag1">100$</span></p>
-						</div>
-					</div>
-					<div class="item item1">
-						<div class="item-content">
-							<img src="images/product1.png"/>
-							<p><a class="" href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-							<p><span id="price-tag1">100$</span></p>
-						</div>
-					</div>
-					<div class="item item1">
-						<div class="item-content">
-							<img src="images/product1.png"/>
-							<p><a class="" href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-							<p><span id="price-tag1">100$</span></p>
-						</div>
-					</div>
+				<div class="row" id="product_list">
+					
 				</div>
 			</div>
 		</div>
@@ -126,11 +86,25 @@
 	</footer>
 	<script type="text/javascript">
 		//var x = document.getElementsByTagName("section");
-		var x = document.getElementsByClassName("section");
-		for (var i = 0; i< x.length;i++) {
-			x[i].style.backgroundColor = "green";
-		}
-	
+		// var x = document.getElementsByClassName("section");
+		// for (var i = 0; i< x.length;i++) {
+		// 	x[i].style.backgroundColor = "green";
+		// }
+		
+			var y= '';
+			for (var i =0; i < x.length; i++) {
+				
+				y += '<div class="item item1">';
+					y+= '<div class="item-content">';
+					y+=	'	<img src="images/'+x[i].image+'"/>';
+					y+=	'	<p><a class="" href="#" title="'+x[i].name+'">';
+					y+= x[i].name+'</a></p>';
+					y+=	'	<p><span id="price-tag1">'+x[i].price+'</span></p>';
+					y+=	'</div>'
+					y+= '</div>';
+			}
+			document.getElementById("product_list").innerHTML = y;
+
 	</script>
 </body>
 </html>
