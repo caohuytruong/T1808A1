@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/fontawesome/css/all.css"/>
 	<link rel="stylesheet" href="css/style3.css"/>
+	<script type="text/javascript" src="data.json"></script>
 </head>
 <body>
 	<section class="section section_1">
@@ -104,8 +105,8 @@
 				</div>
 			</div>					
 			<div class="section_3_2">
-				<div class="row">					
-					<div class="item item">
+				<div class="row" id="product_list">					
+					<!-- <div class="item item">
 						<div class="item-content">
 							<img src="images/Untitled-3.png"/>
 							<p><a class="" href="#" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
@@ -168,7 +169,22 @@
 							<p><span id="price-tag1">100$</span></p>
 						</div>
 					</div>
-				</div>
+				</div> -->
+			<script type="text/javascript">
+				var y= '';
+				for (var i =0; i < x.length; i++) {		
+					y += '<div class="item item">';
+						y+= '<div class="item-content">';
+						y+=	'	<img src="images/'+x[i].image+'"/>';
+						y+=	'	<p><a class="" href="#" title="'+x[i].ten+'">';
+						y+= x[i].ten+'</a></p>';
+						y+=	'	<p><span id="price-tag1">'+x[i].price+'</span></p>';
+						y+=	'</div>'
+						y+= '</div>';
+				}
+				document.getElementById("product_list").innerHTML = y;
+			</script>
+				
 				<div class="exeem circle">				
 					<span>&nbsp;</span>
 					<span>&nbsp;</span>

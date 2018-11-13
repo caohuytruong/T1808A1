@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/fontawesome/css/all.css"/>
+	<link rel="stylesheet" href="css/style3.css"/>
+</head>
+<body>
+	<section class="section section_1">
+		<div class="container">
+			<div class="section_1_1">
+				<img src="images/email.png"><span> info@shopy.com</span>&emsp;    
+				<img src="images/dt.png"><span> 453-5553-996</span>
+			</div>
+			<div class="section_1_2">
+				<a href="#" title="Facebook"><i class="fab fa-facebook-f"></i>&ensp;</a>
+				<a href="#" title="Twitter"><i class="fab fa-twitter"></i>&ensp;</a>
+				<a href="#" title="Google"><i class="fab fa-google-plus-g"></i>&ensp;</a>
+				<a href="#" title="Instagram"><i class="fab fa-instagram"></i>&ensp;</a>
+				<a href="#" title="Abacus"><i class="far fa-abacus"></i>&ensp;</a>
+			</div>
+		</div>
+	</section>
+	<header class="section section_2">
+		<div class="container">
+			<div class="section_2_1">
+				<a href="#" title="shopy"><img src="images/shopy.png"></a>
+			</div>
+			<div class="section_2_2">
+				<div class="menu">
+					<a href="#" title="Home">Home</a>&ensp;&ensp;&ensp;&ensp;
+					<a href="#" title="Products" ><font color="red">Products</font></a>&ensp;&ensp;&ensp;&ensp;
+					<a href="#" title="Hot Deals" >Hot Deals</a>&ensp;&ensp;&ensp;&ensp;
+					<a href="#" title="About" >About</a>&ensp;&ensp;&ensp;&ensp;
+					<a href="#" title="Contact" >Contact</a>&ensp;&ensp;&ensp;&ensp;
+				</div>
+			</div>
+			<div class="section_2_3">
+				<a href="#" title="search"><img src="images/search.png">&ensp;&ensp;</a>
+				<a href="#" title="users"><img src="images/user.png">&ensp;&ensp;</a>
+				<a href="#" title="buy"><img src="images/gio3.png">&ensp;&ensp;</a>
+			</div>
+		</div>
+	</header>
+	<div class="resiter">
+		<div class="container">
+			<div class="users">
+				<img src="images/exx.png">
+			</div>
+			<div class="dang_ki">
+				<form method="GET" action="#" name="form_data" class="form" enctype="multipart/form_data">
+					<div class="form-group">
+						<strong><label>Email</label></br></strong>
+						<input type="email" name="email" value="" placeholder="" class="input-text" /><br/><br/>
+					</div>
+					<div class="form-group">
+						<strong><label>Họ và Tên</label></br></strong>
+						<input type="text" name="name" value="" placeholder="" class="input-text" /><br/><br/>
+					</div>
+					<div class="form-group">
+						<strong><label>Số điện thoại</label></br></strong>
+						<input type="tel" name="number" value="" placeholder="" class="input-text" /><br/><br/>
+					</div>
+					<div class="form-group">
+						<strong><label>Mật khẩu</label></br></strong>
+						<input type="text" name="number" value="" placeholder="" class="input-text" /><br/><br/>
+					</div>
+					<div class="form-group">
+						<strong><label>Nhập lại mật khẩu</label></br></strong>
+						<input type="text" name="number" value="" placeholder="" class="input-text" /><br/><br/>
+					</div>
+					<div class="form-group">
+						<strong><label>Mã giới thiệu</label></br></strong>
+						<input type="text" name="code" value="" placeholder=""  /><br/><br/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="check">
+		<div class="container">
+		  	<div class="check1">
+				<input onclick="display_agree();" id="radio" type="radio" name="radio" /> 
+				<label for="radio">
+					<span>Đồng ý về chính sách bảo mật</span></br>
+					<p id="dieu_khoan">và điều khoản sử dụng</p>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="dangki">
+		<div class="container">
+			<div class="dangki1">
+					<button type="button" id="buttons" onclick="return checkForm();"><font id="agree" color="#7b7b7b" size="5px">Đăng ký</font></button></br>	
+				<script type="text/javascript">
+					function checkForm() {
+						var inputs = document.getElementsByClassName("input-text");
+						var count = 0;
+						for (var i = 0; i < inputs.length; i++) {
+							if(inputs[i].nextElementSibling){
+								inputs[i].nextElementSibling.remove();
+							}
+							var text = inputs[i].value;
+							if (text.length < 1) {
+								inputs[i].classList.add("khonghople");
+								var txt = inputs[i].outerHTML +'<p style="color:red"><i><small>Chưa nhập thông tin</small></i></p>';    
+								inputs[i].outerHTML = txt;
+								count++;
+							
+							}
+							if (text.length  >= 1) {
+										
+										inputs[i].classList.remove("khonghople");					
+							}							
+						}
+						if (count > 0) {
+							return false;
+						}
+						return true;
+					}
+				function display_agree(){
+					document.getElementById("buttons").style.backgroundColor = "#185fad";
+					document.getElementById("agree").style.color = "#ffffff";
+				}				
+				</script>
+				<style type="text/css">
+					.khonghople{border:1px solid red;}
+				</style>
+				<strong><p id="trolai"><a href="#" title=""><font color="#334b91">Trở lại đăng nhập</font></a></p></strong>
+			</div>
+		</div>	
+	</div>
+	<section class="section section_4">
+		<div class="container">
+			<div class="section_4_1">
+				<span id="New-letter"><strong>NEWS LETTER</strong></span>&ensp;&ensp;&ensp;&ensp;
+				<span>join us now to get all news and special offers</span>
+			</div>
+			<div class="section_4_2">
+				<div class="section_4_2_1">
+					<img src="images/email.png"> <span>type your email here<span>&ensp;&ensp;&ensp;&ensp;
+				</div>
+				<div class="section_4_2_2"> 	
+					<a href="#" title="join us"><img src="images/joinus.png"></a>
+				</div>
+		 	</div>
+		</div> 	
+	</section>
+	<footer class="section section_5">
+		<div class="container">
+			<div class="section_5_1">
+				<a href="#" title="shopy"><p><img src="images/shopy.png"/></p></a>
+				<span>shopy c 2015.your copy right here</span>
+
+			</div>
+			<div class="section_5_2">
+				<div class="exem section_5_2_1">					
+					<ul>						
+						<li><a href="#" title="about us">about us</a></li>
+						<li><a href="#" title="contact us">contact us</a></li>
+						<li><a href="#" title="support">support</a></li>						
+					</ul>					
+				</div>
+				<div class="exem section_5_2_2">
+					<ul>						
+						<li><a href="#" title="our feed">our feed</a></li>
+						<li><a href="#" title="terms and conditions">terms and conditions</a></li>
+						<li><a href="#" title="our privacy">our privacy</a></li>						
+					</ul>
+				</div>
+				<div class="exem section_5_2_3">
+					<ul>						
+						<li><a href="#" title="join us">join us</a></li>
+						<li><a href="#" title="live support">live support</a></li>											
+					</ul>
+				</div>
+			</div>
+			<div class="section_5_3">
+				<strong><p><span id="payment">Payment Methods</span></p></strong>
+				<a href="#" title="#"><p><img src="images/nganhang.png"/></p></a>
+			</div>
+		</div>
+	</footer>
+</body>
