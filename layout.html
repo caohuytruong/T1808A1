@@ -5,6 +5,7 @@
 	<meta charset="UTF-8"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=vietnamese" rel="stylesheet">
 	<link rel="stylesheet" href="css/layout.css"/>
+	<script type="text/javascript" src="data.json"></script>
 </head>
 <body>
 	<section class="sec sec1">
@@ -141,72 +142,14 @@
 				</div>
 			</div>
 				<div class="sec3_2">
-				<div class="sec3_2_1">
+				<div class="sec3_2_1" id="product_list">
 			        <div class="item item1">
 			        	<div class="item-content">
-				<img src="image/ao3.png"/>
-				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-					</div>
-				</div>
-					<div class="item item1">
-						<div class="item-content">
-				<img src="image/ao1.png"/>
-				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-					</div>
-				</div>
-					<div class="item item1">
-						<div class="item-content">
-				<img src="image/ao1.png"/>
-				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-					</div>
-				</div>
-					<div class="item item1">
-						<div class="item-content">
-				<img src="image/ao3.png"/>
-				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-					</div> 
-				</div>
-				<div class="item item1">
-					<div class="item-content">
-				<img src="image/ao2.png"/>
-				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-					</div>
-				</div>
-					<div class="item item1">
-						<div class="item-content">
-				<img src="image/ao1.png"/>
-				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-					</div> 
-				</div>
-					<div class="item item1">
-						<div class="item-content">
-				<img src="image/ao3.png"/>
-				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-					</div> 
-				</div>
-					<div class="item item1">
-						<div class="item-content">
-				<img src="image/ao2.png"/>
-				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-					</div> 
-				</div>
-					<div class="item item1">
-						<div class="item-content">
-				<img src="image/ao1.png"/>
-				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-					</div>
+				
 				</div>
 				</div>
 			</div>
+		</div>
 				<div class="sec3_2_2">
 					<a class="circle">
 							<span>&nbsp;</span>
@@ -223,7 +166,7 @@
 				<span>NEWS LETTER</span>&emsp;&emsp; <i>join us now to get all news and special offers</i>
 			</div>
 			<div class="sec4_2">
-				<img src="image/bucthu.png">&ensp;<input type="email" name="email" value="" placeholder="type your email here" class="input-text" /><br/>
+				<img src="image/bucthu.png">&ensp;<input type="email" name="email" value="" placeholder="type your email here" class="input-text"/><br/>
 			</div>
 			<div class="sec4_3">
 				<a href="#"><img src="image/joinus.png"/>
@@ -241,15 +184,15 @@
 			<ul>
 				<li>
 					<input id="about-aboutus" type="checkbox"/>
-					<label for="about-aboutus">about us</label>
+					<label for="about-aboutus">●about us</label>
 				</li>
 				<li>
 					<input id="about-contactus" type="checkbox"/>
-					<label for="about-contactus">contact us</label>
+					<label for="about-contactus">●contact us</label>
 				</li>
 				<li>
 					<input id="about-support" type="checkbox"/>
-					<label for="about-support">support</label>
+					<label for="about-support">●support</label>
 				</li>
 			</ul>
 		</div>
@@ -259,15 +202,15 @@
 			<ul>
 				<li>
 					<input id="about-ourfeed" type="checkbox"/>
-					<label for="about-ourfeed">our feed</label>
+					<label for="about-ourfeed">●our feed</label>
 				</li>
 				<li>
 					<input id="about-terms" type="checkbox"/>
-					<label for="about-terms">terms and conditions</label>
+					<label for="about-terms">●terms and conditions</label>
 				</li>
 				<li>
 					<input id="about-ourprivacy" type="checkbox"/>
-					<label for="about-ourprivacy">our privacy</label>
+					<label for="about-ourprivacy">●;our privacy</label>
 				</li>
 			</ul>
 			</div>
@@ -277,11 +220,11 @@
 			<ul>
 				<li>
 					<input id="about-join" type="checkbox"/>
-					<label for="about-join">join us</label>
+					<label for="about-join">●join us</label>
 				</li>
 				<li>
 					<input id="about-live" type="checkbox"/>
-					<label for="about-live">live support</label>
+					<label for="about-live">●live support</label>
 				</li>
 			</ul>
 			</div>
@@ -294,4 +237,20 @@
 	</div>
 	</footer>
 </body>
+<script type="text/javascript">
+			var y= '';
+			var products = z.data;
+			for (var i =0; i < products.length; i++) {
+				
+				y += '<div class="item item1">';
+					y+= '<div class="item-content">';
+					y+=	'	<img src="'+products[i].image+'"/>';
+					y+=	'	<p><a class="" href="#" title="'+products[i].name+'">';
+					y+= products[i].name+'</a></p>';
+					y+=	'	<p><span id="price-tag1">'+products[i].price+'</span></p>';
+					y+=	'</div>'
+					y+= '</div>';
+			}
+			document.getElementById("product_list").innerHTML = y;
+</script>
 </html>
