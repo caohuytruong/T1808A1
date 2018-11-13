@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> REGISTER</title>
+<link rel="stylesheet" href="css/style_btl.css"/>
+	<meta charset="UTF--8"/>
+</head>
+<style>
+	body {
+       background-color: #f4f6f8;
+		} 
+</style>
+<body>
+
+<body>
+	<form method="GET" action="#" name="form_data" class="form" enctype="multipart/form_data">
+	<section class="doan doan_1">
+		<div class="chia_giua">
+			<div class="doan_1_1">
+				&nbsp; <img src="images/doan1_1.png"/>
+				<a href="#" title="info@shopy.com">info@shopy.com</a>
+				&nbsp; &nbsp; &nbsp;<img src="images/doan1_2.png"/>   996 - 5553 - 453
+			</div>
+			<div class="doan_1_2">
+				<img src="images/doan1_6.png" style="float:right;"/>
+				<img src="images/doan1_5.png" style="float:right;"/>
+				<img src="images/doan1_4.png" style="float:right;"/>
+				<img src="images/doan1_3.png" style="float:right;"/>
+			</div>
+		</div>
+	</section>
+
+	<section class="doan doan_2">
+		<div class="chia_giua">
+			<div class="doan_2_1">
+				<img src="images/doan2_1.png"/>
+				
+			</div>
+			<div class="doan_2_2">
+				<a href="#">Home</a> 
+				<a href="">Products</a>
+				<a href="">Hot Deals</a>
+
+				<a href="">About</a>
+
+				<a href="">Contact</a>
+			</div>
+			<div class="doan_2_3">
+				<img src="images/doan2_4.png"style="float:right;"/>
+				<img src="images/doan2_3.png"style="float:right;"/>
+				<img src="images/doan2_2.png"style="float:right;"/>
+				
+			</div>
+		</div>
+	</section>
+	<section class="icon_register">
+		<div class="chia_giua2">
+			<img src="images/register.png">
+		</div>
+	</section>
+	<section class="main">
+		<div class="chia_giua2">
+			<div class="form_group">
+				<label>Email</label>
+				<p><input type="email" name="email" value="" placeholder="" class="input-text" />
+				<br/></p>
+				</div>
+
+			<div class="form_group">	
+				<label for="user_name">Họ và tên</label>
+				<p><input type="text" cl id="user_name" name="username" value="" placeholder="" class="input-text" />
+				<br/></p>
+			</div>
+	
+		<div class="form_group">
+			<label>Số điện thoại</label>
+			<p><input id="sodienthoai" type="number" name="number" value="" placeholder="" class="input-text" />
+			<br/></p>
+		</div>
+		
+		<div class="form_group">	
+				<label for="user_name">Mật khẩu</label>
+				<p><input id="password" type="password" cl id="matkhau" name="matkhau" value="" placeholder="" class="input-text" />
+				<br/></p>
+		</div>
+
+		<div class="form_group">	
+				<label for="user_name">Nhập lại mật khẩu</label>
+				<p><input id="password2" type="password" cl id="matkhau2" name="matkhau2" value="" placeholder="" class="input-text" />
+				<br/></p>
+		</div>	
+
+		<div class="form_group">	
+				<label for="user_name">Mã giới thiệu</label>
+				<p><input type="text" cl id="gioithieu" name="gioithieu" value="" placeholder="" class="input-text" />
+				<br/></p>
+		</div>
+
+		<div class="radio" id="radio">
+		<input id="check_radio" type="radio" id="checkbox" name="checkbox" class="input-text" />
+			<label for="check_radio"><span style="font-size: 20px; color: #7b7b7b;
+}"> Đồng ý về chính sách bảo mật và điều khoản sử dụng</span></label>
+		</div>
+		
+		<div class="dang_nhap">
+			<button type="submit" onclick="return checkForm()">
+				<span style="padding-top: 20px"> Đăng ký</button></span>
+		</div>
+		<div class="tro_lai">
+			<a href="file://C:/Users/duy%20pham/Documents/GitHub/T1808A1/register.html"> <span style="color: blue"> Trở lại đăng nhập</span></a>
+		</div>
+		</div>
+		</section>
+
+	<section class="doan doan_6">
+			<div class="chia_giua">
+			<div class="doan_6_1">
+				<img src="images/doan2_1.png"/>
+				<p>shopyc 2015. your copy right here</p>
+			</div>
+			<div class="doan_6_2">
+				<font color="#ff5912">. about us</font>
+				<p>. contact us</p>
+				<p>. support</p>
+			</div>
+			<div class="doan_6_3">
+				. our feed
+				<p>. terms and conditions</p>
+				<p>. our privacy</p>
+			</div>
+			<div class="doan_6_4">
+				. join us
+				<p>. live support</p>
+			</div>
+			<div class="doan_6_5">
+				<span style="color: #ff5912"><b>Payment Methods><b></span>
+				<p><img src="images/doan5_1.png"/></p>
+			</div>
+			</div>
+	</section>
+	</form>
+
+	<script type="text/javascript">
+			function checkForm() 
+			{
+			
+			var inputs = document.getElementsByClassName("input-text");
+			var count = 0;
+			var count2 = 0;
+			for(var i=0;i<inputs.length;i++)
+			{
+				var text = inputs[i].value;
+				if(text.length < 1){
+					inputs[i].classList.add("invalid");
+					var txt = inputs[i].outerHTML+'<p style="color:red"><i><small>Chưa nhập thông tin</small></i></p>';
+					//inputs[i].nextElementSibling.style.display = "block";
+					inputs[i].outerHTML =  txt;
+					count++;
+				}
+			}
+			
+
+			var radio = document.getElementById("check_radio")
+			if(count > 0){
+				return false;
+			}
+
+			var sodienthoai =document.getElementById("sodienthoai")
+			if (sodienthoai.value < 10) {
+				alert('Số điện thoại không phù hợp!');
+				return false;
+			}
+
+			var password = document.getElementById("password")
+			var password2 = document.getElementById("password2")
+			if (password.value != password2.value)
+			{
+				 alert('Mật khẩu xác thực không khớp !');
+				 return false;
+			}
+
+			if(radio.checked == false)
+			{
+				alert('Bạn phải chấp nhận chính sách và điều khoản của Shopyc để có thể đăng ký!');
+				return false;
+			} alert('Cảm ơn bạn đã đồng hành cùng Shopy!');
+			return true;
+			}
+
+	</script>
+
+</body>
+</html>

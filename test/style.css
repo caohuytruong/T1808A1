@@ -1,0 +1,467 @@
+
+a{
+	text-decoration: none;
+	color: black;
+}
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	font-family: 'Roboto Slab', serif;
+	sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.15;
+   color: #333333;
+}
+
+}
+.doan
+{
+	float: center;
+	width: :100%;
+
+
+}
+.chia_giua
+{
+	width: 1180px;
+	margin: 0 auto;
+ 	height: 100%;
+ 	
+}
+.doan_1
+{
+	padding-top:20px;
+	height: 40px;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 24px;
+	font-family: Arial;
+	background-color:white;
+	width: 100%;
+
+}
+.doan_1_1
+{
+	float:left;
+	width: 50%;
+	
+}
+.doan_1_2
+{
+    float: right;
+	width: 50%;
+	
+
+}
+.doan_2
+{
+	height: 100px;
+	background-color: white;
+	margin-top: 2px;
+}
+.doan_2_1{
+	padding-top:20px;
+	float: left;
+	width: 15%;
+ 	height: 100%;
+}
+.doan_2_2{
+	font-size: 22px;
+	/*word-spacing: 40px;*/
+	padding-top:35px;
+	float: left;
+	width: 40%;
+ 	height: 100%;
+ 	font-weight: 700;
+}
+.doan_2_2 a:link{
+	color: black;
+}
+.doan_2_2 a:visited{
+	color: black;
+}
+.doan_2_2 a:hover{
+	color: #ff5912;
+}
+.doan_2_3{
+	padding-top:30px;
+	float: left;
+	width: 45%;
+ 	height: 100%;
+}
+.doan_3
+{
+	height: 100%;
+	margin-top: 2px;
+	background-color: white;
+}
+.doan_3_1
+{
+	margin-left: 40px;
+	float: left;
+	width: calc(30% - 10px);
+ 	height: 100%;
+ 	background-color: white;
+}
+img.cangiua
+{	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+.ao
+{	
+	float:left;
+	padding-top:35px;
+}
+
+.ao2
+{
+	width: 154px;
+	margin: 0 auto;
+	text-align: center;
+}
+.ao3
+{
+	float: right;
+}
+.doan_3_2
+{
+	width: 10%;
+	float:left;
+	background-color: white;
+}
+.doan_3_3
+{
+	margin-left: 50px;
+	float: left;
+	width: 55%;
+ 	height: 100%;
+}
+.full
+{
+	font-size: 45px;
+	font-weight: 800;
+	font-family: Arial;
+}
+.half
+{
+	margin-top: 15px;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: Arial;
+}
+.lorem
+{
+	margin-top: 25px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: Arial;
+}
+.choos
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float:left;
+	background-color: white;
+	height: 100%;
+	width: 100%;
+
+}
+.quantity
+{
+	float: right;
+	width: 50%;
+	padding: 5px 0;
+	text-align: right;
+}
+.sizes
+{
+	float:left;
+	width: 50%;
+
+}
+.sizes li{
+	float: left;
+	width: 100%;
+	padding: 5px 0;
+}
+.sizes li input[type=checkbox]:checked + label
+{
+	color: #ff5912;
+}
+.sizes input[type=checkbox]{
+	display: none;
+}
+.price
+{
+	float:left;
+	width: 100%;
+	background-color: white;
+}
+.price120
+{
+	padding-top: 30px;
+	width: 50%;
+	background-color: white;
+	float:left;
+}
+.oder
+{
+	width: 50%;
+	float:right;
+	text-align: right;
+	background-color: white;
+	height: 100%;
+}
+.oder span
+{
+	
+	width: 80px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	background-color: #ff5912;
+	border:20px solid #ff5912;
+	border-radius: 45%;
+}
+.doan_4
+{
+	margin-top: 70px;
+	
+}
+.doan_4_1
+{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 24px;
+	font-family: Arial;
+}
+.doan_4_2
+{
+	margin-top: 50px;
+}
+.item{
+	
+	text-align: center;
+	width: 280px;
+	height: 400px;
+	float:left;/* left right none */
+	margin-bottom: 15px;
+	margin-left:15px;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+	font-family: Arial;
+	text-decoration: none;
+	background-color: white;
+}
+.them
+{
+	text-align: center;
+	height: 50px;
+	width:98%;
+	float: right;
+	background-color: white;
+}
+.doan_5
+{	
+	width: 1180px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color: white;
+	height: 120px;
+
+	
+}
+.doan_5_1
+{
+	padding-top: 50px;
+	float:left;
+	width: 55%;
+	background-color: white;
+	text-indent: 20px;
+}
+	
+.doan_5_2
+{
+	padding-top: 50px;
+	float:left;
+	width: 35%;
+
+}
+.doan_5_3
+{	
+	margin-top: 35px;
+	width: 10%;
+	width: 100px;
+	height: 40px;
+	font-size: 22px;
+	float: right;
+	background-color: #ff5912;
+	margin-right: 15px;
+	text-align: center;
+	padding-top:15px;	
+}
+
+.doan_6
+{	width: 100%;
+	background-color: white;
+	margin-top: 50px;
+}
+.doan_6_1
+{
+	float:left;
+	width: 30%;
+	margin-top: 40px;
+}
+.doan_6_2
+{
+	float:left;
+	width: 15%;
+	margin-top: 40px;
+}
+.doan_6_3
+{
+	float:left;
+	width: 15%;
+	margin-top: 40px;
+}
+.doan_6_4
+{
+	float:left;
+	width: 20%;
+	margin-top: 40px;
+}
+.doan_6_5
+{
+	width: 20%;
+	margin-top: 40px;
+	float: right;
+}
+section:after,section:before{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+@media screen and (min-width: 992px) and (max-width:1200px){
+		.chia_giua{
+			width: 100%;
+		}
+		.item{
+			width: calc(100% / 2 - 30px);
+		}
+		/*.contentbs{
+			margin-left: 20px;
+		}
+		.price{
+			margin-right: 10px;
+		}
+		.addtocart span{
+			font-size: 14px;
+		}
+		.content124{
+			padding-bottom:  110px;
+		}
+		.contentlast{
+			padding-bottom:	94px;
+		}
+		.coloritem1{
+			padding-bottom: 22px;
+		}
+		.section_7_1{
+			padding-bottom: 7px;
+		}
+		.footer1{
+			width: 23%;
+		}
+		.footer2{
+			font-size: 12px;
+		}
+		.footer3{
+			width: 17%;
+		}
+*/
+}
+@media screen and (min-width: 425px) and (max-width: 768px){
+		.chia_giua{
+			width: 100%;
+		}
+		.item{
+			width: calc(100% / 2);
+
+		/*}
+		.framecontent3{
+			padding-top: 55px;
+			padding-bottom: 55px;
+		}
+		.notifi3 a{
+			margin-left: 20px;
+		}
+		.contentlast{
+			padding-bottom: 38px;
+		}
+		.Fillcoloritembs{
+			padding-bottom: 0px;
+		}
+		.price{
+			padding-top: 30px;
+		}
+		.imgitem{
+			width: 100%;
+		}
+		.textitem{
+			padding-top: 15px;
+			width: 100%;
+			padding-bottom: 12px;
+		}
+		.textitem span{
+			font-size: 13px;
+		}
+		.quote i{
+			font-size: 10px;
+		}
+		.footer2{
+			font-size: 12px;
+		}
+		.biggesttext{
+			font-size: 35px;
+		}
+		.secondbt{
+			font-size: 15px;
+		}
+		.content_3_2{
+			font-size: 13px;
+		}
+		.topmenu{
+			font-size: 92px;
+			padding-left: 18px;
+			font-weight: 700;
+		}
+		.content_8_1{
+			font-size: 12px;
+		}
+		.big_slogan{
+			font-size: 15px;
+		}
+		.sub_slogan{
+			font-size: 15px;
+		}
+
+		.section_7_1{
+			padding-bottom: 8px;
+		}
+		.notifi2 i{
+			font-size: 10px;
+		}
+		.footer3 b{
+			font-size: 13px;
+		}
+}
+*/

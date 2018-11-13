@@ -1,0 +1,221 @@
+
+a{
+	text-decoration: none;
+	color: black;
+}
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	font-family: 'roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #28313b;
+	line-height: 1.15;
+
+}
+.doan
+{
+	float: center;
+	width: :100%;
+
+
+}
+.chia_giua
+{
+	width: 1180px;
+	margin: 0 auto;
+ 	height: 100%;
+}
+.doan_1
+{
+	padding-top:20px;
+	height: 40px;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 24px;
+	font-family: Arial;
+	background-color:white;
+
+}
+.doan_1_1
+{
+	float:left;
+	width: 50%;
+	
+}
+.doan_1_2
+{
+    float: right;
+	width: 50%;
+	
+
+}
+.doan_2
+{
+	height: 100px;
+	background-color: white;
+	margin-top: 2px;
+}
+.doan_2_1{
+	padding-top:20px;
+	float: left;
+	width: 15%;
+ 	height: 100%;
+ 	
+
+
+}
+.doan_2_2{
+	font-size: 22px;
+	word-spacing: 40px;
+	padding-top:35px;
+	float: left;
+	width: 70%;
+ 	height: 100%;
+ 
+
+}
+.doan_2_3{
+	padding-top:30px;
+	float: left;
+	width: 15%;
+ 	height: 100%;
+}
+.doan_3
+{
+	height: 100%;
+	margin-top: 100px;
+
+}
+.doan_3_1
+{
+	float: left;
+	width: 25%;
+ 	height: 100%;
+
+}
+
+.menu
+{
+	font-weight: 600;
+	text-align: left;
+	width: 250px;
+	height: 300px;
+	background-color: white;
+	float:left;
+	margin-bottom: 15px;
+	padding-left: 20px;
+	line-height: 3;
+}
+.doan_3_2
+{
+	float: left;
+	width: 75%;
+ 	height: 100%;
+}
+.item{
+	background-color: white;
+	text-align: center;
+	width: 280px;
+	height: 400px;
+	float:left;/* left right none */
+	margin-bottom: 15px;
+	margin-left:15px;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+	font-family: Arial;
+	text-decoration: none;
+}
+.them
+{
+	text-align: center;
+	height: 50px;
+	width:98%;
+	float: right;
+	background-color: white;
+}
+.doan_4
+{	
+	width: 1180px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color: white;
+	height: 120px;
+
+	
+}
+.doan_4_1
+{
+	padding-top: 50px;
+	float:left;
+	width: 55%;
+	background-color: white;
+	text-indent: 20px;
+}
+	
+.doan_4_2
+{
+	padding-top: 50px;
+	float:left;
+	width: 35%;
+	background-color: white;
+	
+}
+.doan_4_3
+{	
+	margin-top: 35px;
+	width: 10%;
+	width: 100px;
+	height: 40px;
+	font-size: 22px;
+	float: right;
+	background-color: #ff5912;
+	margin-right: 15px;
+	text-align: center;
+	padding-top:15px;	
+}
+.doan_5
+{	width: 100%;
+	background-color: white;
+	margin-top: 50px;
+}
+.doan_5_1
+{
+	float:left;
+	width: 30%;
+	margin-top: 40px;
+}
+.doan_5_2
+{
+	float:left;
+	width: 15%;
+	margin-top: 40px;
+}
+.doan_5_3
+{
+	float:left;
+	width: 15%;
+	margin-top: 40px;
+}
+.doan_5_4
+{
+	float:left;
+	width: 20%;
+	margin-top: 40px;
+}
+.doan_5_5
+{
+	width: 20%;
+	margin-top: 40px;
+	float: right;
+}
+section:after,section:before{
+    content: ' ';
+    display: block;
+    clear: both;
+}

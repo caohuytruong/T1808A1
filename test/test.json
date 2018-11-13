@@ -1,0 +1,22 @@
+var x = [
+            {
+                name: "Reebok Track Jacket",
+                image: "ao1.png",
+                price: "100$",
+            },
+            {
+                name: "Reebok Track Jacket",
+                image: "ao2.png",
+                price: "200$",
+            },
+            {
+                name: "Reebok Track Jacket",
+                image: "ao3.png",
+                price: "300$",
+            },
+            {
+                name: "Reebok Track Jacket",
+                image: "ao1.png",
+                price: "400$",
+            },
+        ];
