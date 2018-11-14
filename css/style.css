@@ -1,0 +1,123 @@
+a{
+color : black;
+font-size : 18px;
+font-weight :400;
+line-height :24px;
+font-family: text-decoration: none;/* none underline overline line-through;*/
+}
+p{
+	text-align: center;/* left center right justify */
+	/*text-indent: 100px; */
+}
+.item{
+	text-align: center;
+	width: 400px;
+	height: 500px;
+	border:5px solid /* solid dotted dashed */ green;
+	background-color: #ff0000;
+	float:left;/* left right none */
+/*	margin:15px;*/
+	/*padding: 20px;*/
+.section{
+	float: left;
+	width: 100%;
+}
+.container{
+	width: 1170px;
+	margin: 10 auto;
+ 	height: 100%;
+	background-color: #fff;
+}
+ .section_1{
+	height: 100px;
+	background-color: red;
+}
+.section_1_1{
+	float:left;
+	width: 50%;
+ 	height: 100%;
+	background-color: darkgreen;
+}
+.section_1_2{
+	float:left;
+	width: 50%;
+	height: 100%;
+	background-color: darkred;
+}
+.section_2{
+	height: 100px;
+	background-color: green;
+}
+.section_2_1{
+	float: left;
+	width: 25%;
+ 	height: 100%;
+	background-color: orange;
+}
+.section_2_2{
+	float: left;
+	width: 50%;
+ 	height: 100%;
+	background-color: darkblue;
+}
+.section_2_3{
+	float: left;
+	width: 25%;
+ 	height: 100%;
+	background-color: black;
+}
+.section_3{
+	height: 600px;
+	background-color: orange;
+}
+.section_3_1{
+	float: left;
+	width: 25%;
+ 	height: 100%;
+	background-color: black;
+}
+.section_3_2{
+	float: left;
+	width: 75%;
+ 	height: 100%;
+	background-color: yellow;
+}
+.section_4{
+	height: 100px;
+	background-color: blue;
+} 
+.section4_1{
+	float: left;
+    width: 50%;
+    height: 100%;
+    background-color: grey;
+ }
+.section4_2{
+	float: left;
+    width: 50%;
+    height: 100%;
+    background-color: brown;
+ }
+.section_5{
+
+	height: 150px;
+	background-color: violet;
+}
+.section_5_1{
+	float:left;
+	width: 25%;
+	height: 100%;
+	background-color: pink;
+}
+.section_5_2{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+.section_5_3{
+	float: left;
+	width: 25%;
+	height: 100%;
+	background-color: purple;
+
