@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>BNGW</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,400i,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" href="js/script.js"></script>
+</head>
+	<body>
+		<section class="sec sec1">
+		<div class="cont">
+			<div class="sec1_1">
+				<a href="#"><img src="images/logo.png"/></a>
+			</div>
+			<div class="sec1_2">
+					<style>
+						a:hover {
+   				 		color: #5ed4d0;
+						}
+					</style>
+					<a href="#">Home</a><a href="#">About</a><a href="#">Contact</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sec sec2">
+		<div class="cont">
+			<div class="sec2_1">
+				<p><h1>Contact Info:</h1></p>
+				<p class="s23"><a>To give the begining devide, cattle. Give moving won't, there the abundantly she'd she'd brought air upon. Light hath subdue. Life days creature upon first heaven gathering dry</a></p>
+				<p class="s21"><span>Addres:</span> <a>10111 Santa Monica Boulevard, LA</a></p>
+				<p class="s22"><span>Phone:</span> <a>+44 987 065 908</a></p>
+				<p class="s22"><span>Email:</span> <a>info@Example.com</a></p>
+				<p class="s22"><span>Fax:</span> <a>+44 987 065 909</a></p>
+			</div>
+
+			<div class="sec2_2">
+			<form method="post">	
+				<div class="s222">
+				<input type="text" name="yn" value="" placeholder="Your Name"  required=""></div>
+				<div class="s222">
+				<input type="mail" name="ye" value="" placeholder="Your Email"  required="" /></div>
+				<div class="s223">
+				<input type="text" name="yt" value="" placeholder="Your Title" minlength="10" class="input-text" required="" /></div>
+				<div class="s224">
+				<input type="text" name="yc" value="" placeholder="Your Comment" minlength="10" class="input-text" required=""  /></div>
+			</div>
+			</form>
+			<div class="sec2_3">
+				<button class="button" type="submit" id="btn1" onclick="return checkForm()">SEND MESSAGE</button>
+			</div>
+	</section>
+	<section class="sec sec3">
+		<div class="cont">
+			<img src="images/map.png"
+		</div>
+	</section>
+	</body>
+	<script type="text/javascript">
+			function checkForm() {
+			var inputs = document.getElementsByClassName("input-text");
+			var count = 0;
+			for(var i=0;i<inputs.length;i++){
+				var text = inputs[i].value;
+				if(text.length < 1){
+					inputs[i].classList.add("invalid");
+					var txt = inputs[i].outerHTML+'<span style="color:red"><i><small>Cần ít nhất 10 ký tự</small></i></span>';
+					inputs[i].outerHTML =  txt;
+					count++;
+				}
+			}
+			if(count > 0){
+				return false;
+			}
+			return true;
+			
+		}
+	</script>
+</html>
