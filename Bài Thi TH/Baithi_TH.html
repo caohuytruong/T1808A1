@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Bài Thi - TH</title>
+	<link rel="stylesheet" type="text/css" href="css/stylebaithi.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+</head>
+<body>
+	<header class="section header">
+		<div class="container">
+			<div class="header_1">
+				<a href=""><img src="images/logo.png"></a>
+			</div>
+			<div class="header_2">
+				<ul>
+					<li><b><a href="" class="text1">CONTACT</a></b></li>
+					<li><b><a href="">ABOUT</a></b></li>
+					<li><b><a href="">HOME</a></b></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<section class="section main">
+		<div class="container">
+			<div class="contact_info">
+				<h1>Contact Info:</h1>
+				<p><span>To give give beginning divide, cattle. Give moving<br> won't, there the abundantly she'd brought air<br> upon. Light hath subdue. Life day creature upon<br> first heaven gathering dry.</p>
+				<p><b>Address:</b> 10111 Santa Monica Boulevard, LA</span</p>
+				<p><b>Phone:</b><span> +44 987 065 908</span></p>
+				<p><b>EMail:</b><span> info@Example.com</span></p>
+				<p><b>Fax:</b><span> +44 987 065 909</span></p>
+			</div>
+			<div class="message">
+				<form>
+					<div class="width">
+						<input class="regis name"placeholder="Your Name" type="text" name="name" >
+					</div>
+					<div class="width">
+						<input class="regis email" placeholder="Your Email" type="email" name="email" >
+					</div>
+						<input class="regis title" placeholder="Your Title" type="text" name="title" >
+						<input class="regis cmt" placeholder="Your Comment" type="text" name="cmt" >
+						<button onclick="return checkForm()"><b>SEND MESSAGE</b></button>
+				</form>
+			</div>
+			<div class="map">
+				<img src="images/map.png">
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function checkForm() {
+			var inputs = document.getElementsByClassName("regis");
+			var count = 0;
+			for(var i=0;i<inputs.length;i++){
+				var text = inputs[i].value;
+				if(text.length < 1){
+					inputs[i].classList.add("invalid");
+					var txt = inputs[i].outerHTML+'<p style="color:red"><i><small>Chưa nhập thông tin</small></i></p>';
+					
+					inputs[i].outerHTML =  txt;
+					count++;
+				}
+			}
+			if(count > 0){
+				return false;
+			}
+			return true;
+		}
+	</script>
+</body>
+</html>
