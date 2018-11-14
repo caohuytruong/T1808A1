@@ -1,0 +1,48 @@
+var x = [
+			{
+				ten: "Reebok Track Jacket",
+				image: "Untitled-5.png",
+				price: "100$",
+			},{
+				ten: "Reebok Track Jacket",
+				image: "Untitled-4.png",
+				price: "100$",
+			},
+			{
+				ten: "Reebok Track Jacket",
+				image: "Untitled-3.png",
+				price: "100$",
+			},
+			{
+				ten: "Reebok Track Jacket",
+				image: "Untitled-3.png",
+				price: "100$",
+			},
+			{
+				ten: "Reebok Track Jacket",
+				image: "Untitled-3.png",
+				price: "100$",
+			},
+			{
+				ten: "Reebok Track Jacket",
+				image: "Untitled-5.png",
+				price: "100$",
+			},
+			{
+				ten: "Reebok Track Jacket",
+				image: "Untitled-5.png",
+				price: "100$",
+			},
+			{
+				ten: "Reebok Track Jacket",
+				image: "Untitled-4.png",
+				price: "100$",
+			},
+			{
+				ten: "Reebok Track Jacket",
+				image: "Untitled-3.png",
+				price: "100$",
+			},
+		];
+			
+			
