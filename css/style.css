@@ -1,0 +1,74 @@
+body{
+    background-color: #f5f5f5;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #28313b;
+	line-height: 1.15;
+}
+header{
+    float: left;
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    width: 70%;
+}
+.memu{
+    float: left;
+    width: 30%;
+}
+a{
+	color: #28313b;
+	text-decoration: none;
+	margin-left:20px;
+}
+.form{
+    float: left;
+    width: 100%;
+}
+.form_1{
+    float: left;
+    width: 27%;
+}
+.form_2{
+    width: 64%;
+    float: left;
+    text-align: right;
+}
+input{
+    margin-top: 20px;
+}
+.input-text_1{
+    height: 30px;
+    width: 250px;
+}
+.input-text_2{
+    height: 30px;
+    width: 250px;
+}
+.input-text_3{
+    height: 30px;
+    width: 508px;
+}
+.input-text_4{
+    height: 150px;
+    width: 508px;
+}
+button{
+    background: #10c9c3;
+    width: 180px;
+    height: 60px;
+    padding:20px;
+    margin-right: 330px;
+}
+.map{
+    float: left;
+    text-align: center;
+}
