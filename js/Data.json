@@ -1,0 +1,66 @@
+// var x = {
+// 		status: 1,
+//     	message: "Success!",
+//    		 data:	[
+//     		{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh1.png",
+// 				price: "100$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh2.png",
+// 				price: "200$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh2.png",
+// 				price: "300$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh3.png",
+// 				price: "400$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh2.png",
+// 				price: "400$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh1.png",
+// 				price: "400$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh3.png",
+// 				price: "400$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh2.png",
+// 				price: "400$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh2.png",
+// 				price: "400$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh3.png",
+// 				price: "400$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh2.png",
+// 				price: "400$",
+// 			},
+// 			{
+// 				name: "Reebok Track Jacket",
+// 				image: "anh1.png",
+// 				price: "400$",
+// 			},
+// 			]
+//    		};

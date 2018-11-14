@@ -3,6 +3,7 @@
 <head>
 	<title>Layout</title>
 	<link rel="stylesheet" href="css/web123.css"/>
+	<script type="text/javascript" src="Data.json"></script>
 </head>
 <body bgcolor="#f4f6f8">
 	<section class="section section_1">
@@ -103,8 +104,8 @@
 			</div>
 
 			<div class="section_3_2">
-				<div class="section_3_2_1">
-
+				<div class="section_3_2_1" id="product_list">
+					
 			        <div class="item">	      
 				<img src="images/anh2.png"/>
 				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
@@ -112,9 +113,17 @@
 					</div>
 
 					<div class="item1">			
-				<img src="images/anh5.png"/>
-				<!-- <p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span >100$</span></p> -->		
+				<img src="images/anh6.png"/>
+				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket"><font color="#ff5912">Reebok Track Jacket</font></a></p>
+				<p><font color="#34404b">sizes&emsp;:&emsp;s - m - l - xl</font></p><br>	
+				<div class="tron1"></div>
+				<div class="tron2"></div>
+				<div class="tron3"></div>
+				<div class="tron4"></div><br>	
+				<div class="thang"></div>
+				<div class="anhsec8">&emsp;<img src="images/qua-cau.png">&emsp;
+				<img src="images/giohang3.png">&emsp;
+				<img src="images/heart.png">&emsp;</div>		
 					</div>
 
 					<div class="item">						
@@ -193,34 +202,45 @@
 			<img src="images/copyright.png" >
 		</div>
 		<div class="section_5_2">
-
-			<div class="section_5_21">
-			<ul> 
-       	 	<li class="text52"><font color="37404b" style="font-weight: 550">about us</font></li> 										
-       	 	<li><font color="37404b" style="font-weight: 550">contact us</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">support</font></li>
-           </ul>
+			<div class="section_5_21">			
+       	 	<a href="#" style="text-decoration:none;" ><span>● about us</span>	</a>									
+       	 	<p><a href="#" style="text-decoration:none;" ><span>● contact us</span></a></p>										
+        	<p><a href="#" style="text-decoration:none;" ><span>● support</span></a></p>
 			</div>
-			<div class="section_5_22">
-				<ul>
-			<li  class="text52"><font color="37404b" style="font-weight: 550">our feed</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">terms and conditions</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">pur privacy</font></li>
-        		</ul>
+			<div class="section_5_22">			
+			<a href="#" style="text-decoration:none;" ><span>● our feed</span></a>											
+        	<p><a href="#" style="text-decoration:none;" ><span>● terms and conditions</span></a></p>												
+        	<p><a href="#" style="text-decoration:none;" ><span>● pur privacy</span></a></p>	
         	</div>	
 			<div class="section_5_23">
-				<ul>
-        	<li class="text52"><font color="37404b" style="font-weight: 550">join us</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">live support</font></li> 
-        		</ul>
-        	</div>											
-        
+        	<a href="#" style="text-decoration:none;" ><span>● join us</span>	</a> 											
+        	<p><a href="#" style="text-decoration:none;" ><span>● live support</span></a></p>	        		
+        	</div>										      
 		</div>	
 		<div class="section_5_3">
-			<br><br><br><span><font color="#ff5912" style="font-weight: 550">Payment Methods</span></h5>
+			<span><font color="#ff5912" style="font-weight: 550">Payment Methods</span></h5>
 			<img src="images/payment.png" class="sec53" >
-		</div>		
+		</div>
 	</div>
 	</footer>
+
+	<!-- <script type="text/javascript">
+		var y= '';
+			var products = x.data;
+			for (var i =0; i < products.length; i++) {
+				
+				y += '<div class="item item1">';
+					y+= '<div class="item-content">';
+					y+=	'	<img src="'+products[i].image+'"/>';
+					y+=	'	<p><a class="" href="#" title="'+products[i].name+'">';
+					y+= products[i].name+'</a></p>';
+					y+=	'	<p><span id="price-tag1">'+products[i].price+'</span></p>';
+					y+=	'</div>'
+					y+= '</div>';
+			}
+			document.getElementById("product_list").innerHTML = y;
+
+
+	</script> -->
 </body>
 </html>

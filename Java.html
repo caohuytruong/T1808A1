@@ -105,15 +105,18 @@
     </style>
     </head>
     <body style="background-color: #f4f6f8">
-        <button type="button" onclick="Day()">Day</button>
+        <!-- <button type="button" onclick="Day()">Day</button>
         <button type="button" onclick="Night()">Night</button>
-    
+        
         <span id="tbID">Akatsuki Sasori</span>
     
     <select onchange="select" id="tbID" name="Changed" >
         <option value="time new roman" onclick="A()" >Time new roman</option>
         <option value="arial" onclick="B()" >Arial</option>
-    </select>
+    </select> -->
+
+    <button type="button" onclick="Click()" >Click</button>        
+           <br><textarea cols="100" rows="10" id="a">ádsadddddddddddddddddddddasdasd</textarea>
 
     </body>
 </html>
@@ -121,29 +124,31 @@
 
 <script type="text/javascript">
 
-    function Day(){
-        var x = document.getElementById("tbID");
-        x.style.backgroundColor = "white";
-        x.style.color = "black";
-    }
-    function Night(){
-        var x = document.getElementById("tbID");
-        x.style.backgroundColor = "black";
-        x.style.color = "white";
-        // x.style.fontFamily = "time new roman";
-    }
+    // function Day(){
+    //     var x = document.getElementById("tbID");
+    //     x.style.backgroundColor = "white";
+    //     x.style.color = "black";
+    // }
+    // function Night(){
+    //     var x = document.getElementById("tbID");
+    //     x.style.backgroundColor = "black";
+    //     x.style.color = "white";
+    // }
 
-    function A(){
-            var x = document.getElementById("tbID");
-             x.style.fontFamily = "time new roman";
-    }
 
-     function B(){
-             var x = document.getElementById("tbID");
-             x.style.fontFamily = "Arial";
-    }
+   function Click(){
+    var x = document.getElementById("a");
+    if( x.style.display == "none")
+     x.style.display = "block";
+    else
+        x.style.display = "none";
+    
+    // else
+    // x.style.display = "none";   
+   }
+    
 
-    var obj = document.getElementById("tbID");
+    // var obj = document.getElementById("tbID");
     var html = obj.innerHTML;
     console.log(html);
 </script>

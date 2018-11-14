@@ -5,9 +5,68 @@
 	<link href="https://fonts.googleapis.com/css?family=Rambla:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/web123.css"/>
 	<script type="text/javascript">
-		// function xacnhan(){
-		// 	confirm("Bạn chắc chắn muốn đăng ký không?")
+		// function check(){
+		// 	var nameTag = document.getElementById('name')
+		// 	var mailTag = document.getElementById('mail')
+		// 	var numberTag = document.getElementById('number')
+		// 	var passTag = document.getElementById('pass')
+		// 	var pass2Tag = document.getElementById('pass2')
+		// 	var number2Tag = document.getElementById('number2')
+
+		// 	var name = nameTag.value
+		// 	var mail = mailTag.value
+		// 	var number = numberTag.value
+		// 	var pass = passTag.value
+		// 	var pass2 = pass2Tag.value
+		// 	var number2 = number2Tag.value
+
+		// 	var x = document.getElementById("submit");
+		// 	if(name != "" && mail != "" && number != "" && pass != "" && pass2 != "" && number2 != "") {
+		// 		x.disabled = false;
+		// 		x.style.color = "white";
+		// 		x.style.backgroundImage =" linear-gradient(to right, rgba(60,68,165), rgba(45,138,201))";
+		// 	}
+		// 	else if(name == "" || mail == "" || number == "" || pass == "" || pass2 == "" || number2 == ""){
+		// 		x.disabled = true;
+		// 	}
+		// 	}
+
+
+		// function check3(){
+		// 	var y = document.getElementById("submit");
+		// 	y.disabled = false;
+		// 	y.style.color = "white";
+		// 	y.style.backgroundColor = "#3465b7";
 		// }
+
+		function check2(){
+			var z = document.getElementById('vong2');
+			z.style.backgroundColor = "#1860ad";
+			var y = document.getElementById("submit");
+			y.disabled = false;
+			y.style.color = "white";
+		}
+
+		function checkForm() {
+			var inputs = document.getElementsByClassName("input-text");
+			var count = 0;
+			for(var i=0;i<inputs.length;i++){
+				var text = inputs[i].value;
+				if(inputs[i].nextElementSibling)
+					{ inputs[i].nextElementSibling.remove()}
+				if(text.length < 1){
+					inputs[i].classList.add("invalid");
+					var txt = inputs[i].outerHTML+'<span style="color:red" ><i><small>&emsp;Chưa nhập thông tin</small></i></span>';
+					inputs[i].outerHTML =  txt;
+					count++;
+				}
+			  if(text.length >= 1){
+			  	inputs[i].classList.remove("invalid");
+			  }
+			}
+		}
+		var radio = document.getElementById("input-radio");
+
 	</script>
 </head>
 <body bgcolor="#f4f6f8">
@@ -15,7 +74,7 @@
 		<div class="container">
 			<div class="section_1_1">
 				<a href="#"><img src="images/mail.png" ></a>&ensp;<img src="images/info.png">&emsp;
-				<a href="#"><img src="images/3.png"></a>&ensp;<img src="images/so.png" >
+				<a href="#"><img src="images/3.png"></a>&ensp;<img src="images/so.png">
 			</div>
 			<div class="section_1_2">
 				<a href="#"><img src="images/face.png" ></a> 
@@ -32,7 +91,7 @@
 				<img src="images/logo.png">
 			</div>
 			<div class="section_2_2">
-				<a href="#" style="text-decoration:none;" ><span class="text2">Home</span></a>&emsp;&emsp;<a href="#" style="text-decoration:none;"><span class="text2">Products</span></a>&emsp;&emsp;<a href="#" style="text-decoration:none;" ><span class="text2">Hot Deals</span></a>&emsp;&emsp;<a href="#" style="text-decoration:none;"><span class="text2">About</span></a>&emsp;&emsp;<a href="#" style="text-decoration:none;"><span class="text2">Contact</span></a>
+				<a href="#" style="text-decoration:none;"><span class="text2">Home</span></a>&emsp;&emsp;<a href="#" style="text-decoration:none;"><span class="text2">Products</span></a>&emsp;&emsp;<a href="#" style="text-decoration:none;" ><span class="text2">Hot Deals</span></a>&emsp;&emsp;<a href="#" style="text-decoration:none;"><span class="text2">About</span></a>&emsp;&emsp;<a href="#" style="text-decoration:none;"><span class="text2">Contact</span></a>
 			</div>
 			<div class="section_2_3">
 				<a href="#" ><img src="images/search.png" ></a>
@@ -51,31 +110,25 @@
 	<header class="section section_9">
 		<div class="container1">
 				<div class="section9"><span>Email</span><br>
-				<input type="text" name="Email" size="28"></div>
+				<input id="mail" type="text" name="mail" size="28" onkeyup="check()" class="input-text"></div>
 				<div class="section9"><span>Họ và tên</span><br>
-				<input type="text" name="tên" size="28"></div>
+				<input id="name" type="text" name="name" size="28" onkeyup="check()" class="input-text"></div>
 				<div class="section9"><span>Số điện thoại</span><br>
-				<input type="text" name="sđt" size="28"></div>
+				<input id="number" type="tel" name="number" size="28" onkeyup="check()" class="input-text"></div>
 				<div class="section9"><span>Mật khẩu</span><br>
-				<input type="text" name="tên" size="28"></div>
+				<input id="pass" type="password" name="pass" size="28" onkeyup="check()" class="input-text"></div>
 				<div class="section9"><span>Nhập lại mật khẩu</span><br>
-				<input type="text" name="tên" size="28"></div>
+				<input id="pass2" type="password" name="pass2" size="28" onkeyup="check()" class="input-text"></div>
 				<div class="section9"><span>Mã giới thiệu</span><br>
-				<input type="text" name="tên" size="28"></div>
+				<input id="number2" type="text" name="number2" size="28" onkeyup="check()"></div>
 		</div>
 	</header>
 
 	<footer>
 		<div class="section section_10">
 			<div class="container">
-				<!-- <ul>
-					<li>
-						<input id="check" type="checkbox"/>
-						<label for="check"><span></span>Đồng ý về chính sách bảo mật và điều khoản sử dụng</label>
-					</li>
-				</ul> -->
-				<div class="v1">
-					<div class="v2"></div>
+				<div class="v1" onclick="check2()"  id="click">
+					<div class="v2" id="vong2"></div>
 				</div>
 				<span id="text10">Đồng ý về chính sách bảo mật <br> <span id="text10_2">và điều khoản sử dụng</span></span>
 			</div>
@@ -84,12 +137,13 @@
 	
 	<header class="section section_11">
 		<div class="container1">
-			<div class="sec11_1" onclick="return confirm('Bạn chắc chắn muốn đăng ký không?')">
-				<a href="#" style="text-decoration:none;" disabled><div class="text11_1"><span id="text11">Đăng ký</span></div></a>
-		</div>
+			<div class="sec11_1" > <!-- onclick="return confirm('Bạn chắc chắn muốn đăng ký không?')" -->
+				<button id="submit" type="button" class="text11_1" onclick="return checkForm()" disabled>Đăng ký</button>
+			</div>
 			<div class="sec11_2">
 				<span id="text12">Trở lại đăng nhập</span>
 			</div>
+		</div>
 	</header>
 
 	<footer class="section section_5">
@@ -98,32 +152,24 @@
 			<img src="images/logo.png" ><br><br>
 			<img src="images/copyright.png" >
 		</div>
-		<div class="section_5_2">
-
-			<div class="section_5_21">
-			<ul> 
-       	 	<li class="text52"><font color="37404b" style="font-weight: 550">about us</font></li> 										
-       	 	<li><font color="37404b" style="font-weight: 550">contact us</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">support</font></li>
-           </ul>
+		<div class="section_5_2">	
+        	<div class="section_5_21">			
+       	 	<span>● about us</span>										
+       	 	<p><span>● contact us</span></p>										
+        	<p><span>● support</span></p>
 			</div>
-			<div class="section_5_22">
-				<ul>
-			<li  class="text52"><font color="37404b" style="font-weight: 550">our feed</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">terms and conditions</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">pur privacy</font></li>
-        		</ul>
+			<div class="section_5_22">			
+			<span>● our feed</span>											
+        	<p><span>● terms and conditions</span></p>												
+        	<p><span>● pur privacy</span></p>	
         	</div>	
 			<div class="section_5_23">
-				<ul>
-        	<li class="text52"><font color="37404b" style="font-weight: 550">join us</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">live support</font></li> 
-        		</ul>
-        	</div>											
-        
+        	<span>● join us</span>	 											
+        	<p><span>● live support</span></p>	        		
+        	</div>									
 		</div>	
 		<div class="section_5_3">
-			<br><br><br><span><font color="#ff5912" style="font-weight: 550">Payment Methods</span></h5>
+			<span><font color="#ff5912" style="font-weight: 550">Payment Methods</font></span></h5>
 			<img src="images/payment.png" class="sec53" >
 		</div>		
 	</div>									    

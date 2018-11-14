@@ -3,11 +3,26 @@
 <head>
 	<title>Layout</title>
 	<link rel="stylesheet" href="css/web123.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Rambla:400,700" rel="stylesheet">
 	<script type="text/javascript">
-		var x= 10;
-		console.log(x);
-		x = "Hello";
-		console.log(x);
+		// function doimauchu(){
+		// 	var x = getElementByClassName("text52");
+		// 	x.style.color = "#ff5912";
+		// }
+		// var X = document.getElementById('anh6PNG')
+		
+
+		 function hoandoi(){
+		 	var Y = document.getElementById('anh1PNG');
+		 var X = document.getElementById('anh6PNG');	 
+		 Y.innerHTML = X.innerHTML;
+		}
+
+		function trolai(){
+			var T = document.getElementById('anh1PNG');
+		 var Z = document.getElementById('anh6PNG');
+		 Z.innerHTML = T.innerHTML;
+		}
 		
 	</script>
 </head>
@@ -62,7 +77,7 @@
 
 	<section class="section section_7">
 		<div class="container1">	
-			<div class="sec71"><span id="text77"><span id="text71">NEW</span>&emsp;<SPAN id="text73">ARRVIALS</SPAN></span></div>
+			<div class="sec71"><span id="text71">NEW</span>&emsp;<SPAN id="text73">ARRVIALS</SPAN></span></div>
 			<div class="sec72"><span id="text72">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span></div>
 		</div>
 	</section>
@@ -70,7 +85,7 @@
 	<section class="section section_8">
 		<div class="container">
 					<div class="item item2">	      
-				<img src="images/anh1.png"/>
+				<img src="images/anh3.png"/>
 				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
 				<p><span >100$</span></p>					
 					</div>
@@ -79,16 +94,26 @@
 				<img src="images/anh2.png"/>
 				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
 				<p><span >100$</span></p>		
+					</div>				
+
+					<div class="item item2" id="anh6PNG">						
+				<img src="images/anh6.png"/>
+				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket"><font color="#ff5912">Reebok Track Jacket</font></a></p>
+				<p><font color="#34404b">sizes&emsp;:&emsp;s - m - l - xl</font></p><br>	
+				<div class="tron1"></div>
+				<div class="tron2"></div>
+				<div class="tron3"></div>
+				<div class="tron4"></div><br>	
+				<div class="thang"></div>
+				<div class="anhsec8">&emsp;<img src="images/qua-cau.png">&emsp;
+				<img src="images/giohang3.png">&emsp;
+				<img src="images/heart.png">&emsp;</div>						
 					</div>
 
-					<div class="item item2">						
-				<img src="images/anh5.png"/>						
-					</div>
-
-					<div class="item item2">						
+					<div class="item item2" id="anh1PNG" onmouseover="hoandoi()" onmouseleave="trolai()">						
 				<img src="images/anh1.png"/>
 				<p><a href="#" style="text-decoration:none;" title="Reebok Track Jacket">Reebok Track Jacket</a></p>
-				<p><span >100$</span></p>					
+				<p><span >100$</span></p>									
 					</div> 
 		</div>
 	</section>
@@ -159,31 +184,23 @@
 			<img src="images/copyright.png" >
 		</div>
 		<div class="section_5_2">
-
-			<div class="section_5_21">
-			<ul> 
-       	 	<li class="text52"><font color="37404b" style="font-weight: 550">about us</font></li> 										
-       	 	<li><font color="37404b" style="font-weight: 550">contact us</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">support</font></li>
-           </ul>
+			<div class="section_5_21">			
+       	 	<span>● about us</span>										
+       	 	<p><span>● contact us</span></p>										
+        	<p><span>● support</span></p>
 			</div>
-			<div class="section_5_22">
-				<ul>
-			<li  class="text52"><font color="37404b" style="font-weight: 550">our feed</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">terms and conditions</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">pur privacy</font></li>
-        		</ul>
+			<div class="section_5_22">			
+			<span>● our feed</span>											
+        	<p><span>● terms and conditions</span></p>												
+        	<p><span>● pur privacy</span></p>	
         	</div>	
 			<div class="section_5_23">
-				<ul>
-        	<li class="text52"><font color="37404b" style="font-weight: 550">join us</font></li> 											
-        	<li><font color="37404b" style="font-weight: 550">live support</font></li> 
-        		</ul>
-        	</div>											
-        
+        	<span>● join us</span>	 											
+        	<p><span>● live support</span></p>	        		
+        	</div>										        
 		</div>	
 		<div class="section_5_3">
-			<br><br><br><span><font color="#ff5912" style="font-weight: 550">Payment Methods</span></h5>
+			<span><font color="#ff5912" style="font-weight: 550">Payment Methods</span></h5>
 			<img src="images/payment.png" class="sec53" >
 		</div>		
 	</div>									    
