@@ -1,0 +1,33 @@
+.container {
+ background: #fff;
+ padding-top: 30px;
+ padding-left: 100px;
+ padding-right: 80px;
+ padding-bottom: 50px;
+ 
+ position: relative;
+ left: 0;
+ width: 100%;
+}
+.menu {
+  
+  text-align: right;
+  padding-right: 280px;
+  color: #fff;
+  display: block;
+}
+
+.content{
+	 background: #f5f5f5;
+	 
+}
+
+
+.header{
+	background: #f5f5f5;
+	
+}
+.footer{
+	background: #f5f5f5;
+}
+	
