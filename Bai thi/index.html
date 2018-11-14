@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	<title>BNGW</title>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<header class="section section_1">
+		<div class="container">
+			<div class="section_1_1">
+				<img src="images/logo.png">
+			</div>
+			<div class="section_1_2">
+				<div class="Home">
+					<strong><a href="#" title="">HOME</a>&emsp;</strong>
+					<strong><a href="#" title="">ABOUT</a>&emsp;</strong>
+					<strong><a href="#" title=""><font color="#10c9c3">CONTACT</font></a></strong>
+				</div>
+			</div>
+		</div>	
+	</header>
+	<section class="section section_2">
+		<div class="container">
+			<div class="section_2_1">
+				<div class="write">
+					<strong><h2><p><font color="#171717">Contact Info</font></p></h2></strong>
+					<p>To give give beginning divide,cattle.Give moving</p>
+					<p>won't,there the abundatly she'd she'd brought air</p>
+					<p>upon.Light hath subdue.Life days creature upon</p>
+					<p>first heaven gathering dry</p></br>
+					<p><strong>Address</strong>: 10111 Santa Monica Boulevard,LA</p>
+					<p><strong>Phone</strong>: +44 987 065 908</p>
+					<p><strong>Email</strong>: info@Example.com</p>
+					<p><strong>Fax</strong>: +44 987 065 909</p>
+				</div>
+			</div>
+			<Form class="section_2_2">
+				<form method="GET" action="#" name="form_data" class="form" enctype="multipart/form_data">
+				<div class="chia">
+					<div class="chia1">
+						<div class="form-group">
+							<input type="text" name="name" placeholder="Your Name" class="input-text"/>
+						</div>
+					</div>
+					<div class="chia2">
+						<div class="form-group">
+							<input type="text3" name="email" placeholder="Your Email" class="input-text"/>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="text2" name="title" placeholder="Your Title" class="input-text"/>
+				</div>
+				<div class="form-group">	
+					<input type="text1" name="title" placeholder="Your Comment" class="input-text"/>
+				</div>
+				<button type="button" id="buttons" onclick="return checkForm();">SENT MESSAGE</button>
+				<script type="text/javascript">
+					function checkForm() {
+						var inputs = document.getElementsByClassName("input-text");
+						var count = 0;
+						for (var i = 0; i < inputs.length; i++) {
+							if(inputs[i].nextElementSibling){
+								inputs[i].nextElementSibling.remove();
+							}
+							var text = inputs[i].value;
+							if (text.length < 1) {
+								inputs[i].classList.add("khonghople");
+								var txt = inputs[i].outerHTML +'<p style="color:red"><i><small>Chưa nhập thông tin</small></i></p>';    
+								inputs[i].outerHTML = txt;
+								count++;
+								
+							}
+							if (text.length  >= 1) {
+										
+										inputs[i].classList.remove("khonghople");					
+							}							
+						}
+					
+						if (count > 0) {
+							return false;
+						}
+						return true;
+					}
+					function xacnhan(){
+						confirm("ok");
+					}
+
+				</script>
+					<style type="text/css">
+						.khonghople{border:1px solid red;}
+					</style>
+
+			</Form> 
+		</div>
+	</section>
+	<map class="section section_3">
+		<div class="container">
+			<img src="images/map.png">
+		</div>
+	</map>
+	
+</body>
+</html>
