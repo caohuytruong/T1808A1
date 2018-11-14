@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="C:\Users\duy pham\Desktop\SET3\css\style.css"/>
+	<script type="text/javascript"src="scrip.js"></script>
+	<link href="https://fonts.google.com/specimen/Nunito+Sans rel="stylesheet">
+
+	<title>BNGW</title>
+
+</head>
+<body>
+	<section class="doan_1" >
+		<div class="chia_giua">
+		<div class="doan_1_1">
+		 <img src="C:\Users\duy pham\Desktop\SET3\images\logo.png">
+		
+		<div class="doan_1_2">
+			<a href="#"> HOME </a>&nbsp;
+			<a href="#"> ABOUT</a>&nbsp;
+			<a href="#"> CONTACT</a>&nbsp;
+		</div>
+		</div>
+	</div>
+	</section>
+
+	<section class="doan_2" >
+		<div class="chia_giua">
+			<div class="doan_2_1">
+				<div class="data1">
+					<span> Contact Info:</span>
+				</div>
+				<div class="data2">
+					<span> To give give beginning divide, cattle. Give moving won't, there the abundabtly she'd she'd brought air upon. Light hath subdue. Life days creature upon fist heaven gathering dry</span>
+				</div>
+				<div class="data3">
+					<span> <b>Address:</b> 10111 Santa Monica Boulevard, LA</span>
+					<p>&nbsp;</p>
+					<span> <b>Phone:</b> +44 987 065 908</span>
+					<p>&nbsp;</p>
+					<span> <b> Email:</b> info@Example.com</span>
+					<p>&nbsp;</p>
+					<span> <b> Fax:</b> +44 987 065 909 </span>
+				</div>
+			</div>
+			<div class="doan_2_2">
+
+			<div class="group1">
+			
+			<input id="Your_Name" type="text"  name="text" placeholder="Your Name" class="input-text" />
+				<span> &nbsp;</span>
+			<input id="Your_Name" type="Email"  name="email" placeholder="Your Email" class="input-text" />
+
+			<br/>
+
+			<div class="group2">
+		
+			<input id="Your Title" type="text" name="text" placeholder="Your Title" class="input-text" />
+			<br/>
+
+			<div class="group3">
+			
+			<input id="Your Comment" type="text" name="text" placeholder="Your Comment" class="input-text" />
+			<br/>
+
+			<div class="group4">
+			<button type="submit" onclick="return checkForm()">
+				<span style="padding-top: 20px"> SEND MESSAGE</button></span>
+		</div>
+		</div>
+			</div>
+			</div>
+	</section>
+	<section class="doan_3" >
+		<div class="chia_giua">
+			<img src="C:\Users\duy pham\Desktop\SET3\images\map.png">
+		</div>
+	</section>
+	<script type="text/javascript">
+			function checkForm() 
+			{
+			
+			var inputs = document.getElementsByClassName("input-text");
+			var count = 0;
+			var count2 = 0;
+			for(var i=0;i<inputs.length;i++)
+			{
+				var text = inputs[i].value;
+				if(text.length < 1){
+					inputs[i].classList.add("invalid");
+					var txt = inputs[i].outerHTML+'<p style="color:red"><i><small>Chưa nhập thông tin</small></i></p>';
+					//inputs[i].nextElementSibling.style.display = "block";
+					inputs[i].outerHTML =  txt;
+					count++;
+				}
+			}
+			if(count > 0){
+				return false;
+			}
+			for(var i=0;i<inputs.length;i++)
+			{
+				var text = inputs[i].value;
+				if(text.length < 10){
+					
+					count2++;
+				}
+			}
+			if(count2 > 0){
+				alert('số ký tự phải lớn hơn 10');
+				return false;
+			}
+			alert('cảm ơn bạn');
+			}
+			
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+a{
+	text-decoration: none;
+	color: black;
+}
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	font-family: 'Arial',
+	sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.15;
+   	color: #333333;
+   	background-color: #f5f5f5;
+}
+.doan_1
+{
+	background-color: white;
+	
+}
+.chia_giua
+{
+	width: 1180px;
+	margin: 0 auto;
+ 	height: 100%;	
+}
+.doan_1_1
+{
+	padding-top: 20px;
+
+	padding-bottom: 20px;
+	width: 100%;
+
+
+}
+.doan_1_2
+{
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+	width: 50% calc(50% - 20px);
+	float: right;
+
+}
+.doan_1_2 a:hover{
+	color: #ff5912;
+}
+.doan_2
+{
+	margin-top: 100px;
+}
+.doan_2_1
+{
+	width: 35%;
+	float: left;
+}
+.data1
+{
+	font-size: 40px;
+	font-weight: 600;
+}
+.data2
+{
+	margin-top: 30px;
+	color: #787878;
+}
+.data3
+{
+	margin-top:30px;
+}
+.doan_2_2
+{
+	width: 50%;
+	float: right;
+	/*background-color: gray;*/
+}
+.group1
+{
+	width: 100%;
+	float: left;
+
+	/*background-color: red;*/
+}
+.group1 input{
+	height: 40px;
+	width: 40%;
+	border: 2px solid #b7b8b9;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: white;
+	float: left;
+	color: black;
+
+}
+.group2
+{
+	margin-top: 30px;
+	width: 100%;
+	float: left;
+}
+.group2 input{
+	height: 40px;
+	width: 100%;
+	border: 2px solid #b7b8b9;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.chia40
+{
+	width: 40%;
+}
+.group3
+{
+	margin-top: 80px;
+	width: 100%;
+}
+.group3 input
+{
+	height: 200px;
+}
+button
+{
+	margin-top: 20px;
+	height: 80px;
+	width: 40%;
+	border: 2px solid #b7b8b9;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	background-image: linear-gradient(to right, #3d44a4, #3d44a4);
+	color:white;
+}
+.doan_3
+{
+	text-align: center;
+	height: 100%;
+	margin: 0 auto;
+}
+input
+{
+	color: black;
+}
