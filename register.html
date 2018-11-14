@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css\register.css">
+</head>
+<body>
+	<section class="section section_1">
+		<div class="container">
+			<div class="section_1_1">
+				<img src="PSD6\register\Mail Ico.png"/>
+				<span>Email</span>
+				<img src="PSD6\register\Phone Ico.png"/>
+				<span>Telephone</span>
+			</div>
+			<div class="section_1_2">
+				<a href="https://www.facebook.com/" target="_blank"><span><img src="PSD6\register\facebook.png"/></span></a>
+				<a href="https://twitter.com/" target="_blank"><span><img src="PSD6\register\twitter.png"/></span></a>
+				<a href="https://www.google.com.vn/" target="_blank"><span><img src="PSD6\register\google +.png"/></span></a>
+				<a href="https://www.instagram.com/" target="_blank"><span><img src="PSD6\register\instegram.png"/><span></a>
+			</div>		
+		</div>
+	</section>
+	<section class="section section_2">
+		<div class="container">
+			<div class="section_2_1">
+					<a href="#"><img src="PSD6\register\Logo.png"></a>
+			</div>
+			<div class="section_2_2">
+				<span><a href="#" title="Home">Home</a></span>
+				<span><a href="#" title="Products" class="productss">Products</a></span>
+				<span><a href="#" title="Hot Deals">Hot Deals</a></span>
+				<span><a href="#" title="About">About</a></span>
+				<span><a href="#" title="Contact">Contact</a></span>
+				</div>
+			<div class="section_2_3">
+				<a href="#"><span><img src="PSD6\register\Search.png"/></span></a>
+				<a href="#"><span><img src="PSD6\register\User.png"/></span></a>
+				<a href="#"><span><img src="PSD6\register\Cart.png"/></span></a>
+			</div>
+		</div>
+	</section>
+	<section class="section section_3">
+		<div class="center">
+			<p class="layer1"><img src="PSD6\register\Layer 1.png"><p>
+			<form method="GET" action="#" name="form_data" class="form" enctype="multipart/form_data">
+				<div>
+					<label>Email</label></br>
+					<input type="email" name="email" value="" class="input-info"/><br/>
+					<label>Họ và tên</label></br>
+					<input type="text" name="fullname" class="input-info"/></br>
+					<label>Số điện thoại</label></br>
+					<input type="tel" id="phone" class="input-info" /></br>
+					<label>Mật khẩu</label></br>
+					<input type="password" id="password" class="input-info" /></br>
+					<label>Nhập lại mật khẩu</label></br>
+	       			<input type="password" id="confirm_password" class="input-info" /></br>
+	       			<label>Mã giới thiệu</label></br>
+	       			<input type="text" name="introductory_code"/></br>
+				</div>
+				<div class="checkk">
+					<input type="radio" name="radio" value="1" id="input-radio"/>
+					<a href="#"><span>Đồng ý về chính sách bảo mật</span></a></br>
+					<span class="vv"> và điều khoản sử dụng</span></br>
+					<button type="submit" onclick="return checkForm();">Đăng ký</button></br>
+					<a href="#"><span class="tltrc">Trở lại trang chủ</span></a>
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer class="section section_4">
+		<div class="container">
+			<div class="section_4_1">
+				<img src="PSD6\register\logo.png"/>
+				<h5>shop c 2015 .your coye right here</h5>
+			</div>
+				<div class="section_4_2">
+					<div class="section_4_2_1">
+						<ul>
+							<a href="#"><li class="choose">about us</li></a>
+							<a href="#"><li>contact</li></a>
+							<a href="#"><li>support</li></a>		
+						</ul>
+					</div>
+					<div class="section_4_2_2">
+						<ul>
+							<a href="#"><li>our feed</li></a>
+							<a href="#"><li>terms and comditions</li></a>
+							<a href="#"><li>our privacy</li></a>
+						</ul>
+					</div>
+					<div class="section_4_2_3">
+						<ul>
+							<a href="#"><li>join us</li></a>
+							<a href="#"><li>live support</li></a>
+						</ul>
+					</div>			
+				</div>
+			<div class="section_4_3">
+				<b>Payment Methods</b>
+				<p><img src="PSD6\register\Payment Images.png"/></p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		function checkForm() {
+			var inputs = document.getElementsByClassName("input-info");
+			var count = 0;
+			for(var i=0;i<inputs.length;i++){
+				var text = inputs[i].value;
+				if(text.length < 1){
+					inputs[i].classList.add("invalid");
+					var txt = inputs[i].outerHTML+'<p style="color:red"><i><small>Chưa nhập thông tin</small></i></p>';				
+					inputs[i].outerHTML =  txt;
+					count++;
+				}
+			}
+			if(count > 0){
+				return false;
+			}
+			if(document.getElementById("password")!=document.getElementById("confirm_password")){
+				alert('Mật khẩu nhập lại không đúng!');
+				alert('Hãy điền lại mật khẩu!');
+				return false;
+			}
+			var radio = document.getElementById("input-radio");
+			if(!radio.checked){
+				alert('Bạn phải chấp nhận chính sách và điều khoản của Shopy để có thể đăng ký!');
+				return false;
+			}alert('Cảm ơn bạn đã đồng hành cùng Shopy!');
+			return true;
+		}
+	</script>
+</body>
+</html>
