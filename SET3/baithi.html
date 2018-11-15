@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài Thi</title>
+	<link rel="stylesheet" href="css/stylebaithi.css">
+</head>
+<body>
+	<section class="top">
+			<div class="top_1">
+				<a href="#"><img class="logo" src="images/logo.jpg"></a> 
+			</div>
+
+			<div class="top_2">
+				<div class="bars">
+					<ul class="ul_bars">
+						<li class="li_bars"><a class="a_bars" href="#">HOME</a></li>
+	  					<li class="li_bars"><a class="a_bars" href="#">ABOUT</a></li>
+	  					<li class="li_bars"><a class="a_bars" href="#">CONTACT</a></li>
+	  				</ul>
+	  			</div>	
+			</div>
+	</section>
+
+	<section class="container_1">
+		<div class="container_1_1">
+			<p style="font-weight: bold; font-size: 40px; margin-left: 100px;">Contact Info:</p>
+			<p style="margin-left: 100px; color: #7b7b7b;">To give give beginning divide, cattle.Give moving</p>
+			<p style="margin-left: 100px; color: #7b7b7b;">won't, there the abundantly she'd she'd brought air</p>
+			<p style="margin-left: 100px; color: #7b7b7b;">upon. Light hath subdue. Life days creature upon</p>
+			<p style="margin-left: 100px; color: #7b7b7b;">first heaven gathering dry.</p>
+			<p><span style="font-weight: bold; font-size: 20px; margin-left: 100px;">Address:</span>
+			   <span style="color: #7b7b7b;">&ensp;10111 Santa Monica Boulevard, LA</span></p>
+			<p><span style="font-weight: bold; font-size: 20px; margin-left: 100px;">Phone:</span>
+			   <span style="color: #7b7b7b;">&ensp;+44 987 065 908</span></p>
+			<p><span style="font-weight: bold; font-size: 20px; margin-left: 100px;">Email:</span>
+			   <span style="color: #7b7b7b;">&ensp;info@Example.com</span></p>
+			<p><span style="font-weight: bold; font-size: 20px; margin-left: 100px;">Fax:</span>
+			   <span style="color: #7b7b7b;">&ensp;+44 987 065 909</span></p>
+		</div>
+
+		<div class="container_1_2">
+			<form method="GET" action="#" name="form_data" class="form" enctype="multipart/form_data">
+				<div style="float: left;">
+					<div class="form-group">
+						<input class="input_info" type="text" name="name" placeholder="Your Name" style="height: 40px; width: 290px;"/><br>
+					</div>	
+				</div>
+
+				<div style="float: left; margin-left: 20px;">
+					<div class="form-group">
+						<input class="input_info" type="text" name="email" placeholder="Your Email" style="height: 40px; width: 290px;"/><br>
+					</div>	
+				</div>
+					<div class="form-group">
+	       				<input class="input_info" type="text" name="title" placeholder="Your Title" style="height: 40px; width: 635px; margin-top: 15px;"/><br>
+	       			</div>
+	       			<div class="form-group">	
+	       			<input class="input_info" type="text" name="cmt" placeholder="Your Comment" style="height: 200px; width: 635px; margin-top: 15px;"/><br>
+	       			</div>
+	       			<button type="button" id="button" onclick="return checkForm();">SEND MESSAGE</button>
+	       				<script type="text/javascript">
+					function checkForm() {
+						var inputs = document.getElementsByClassName("input_info");
+						var count = 0;
+						for (var i = 0; i < inputs.length; i++) {
+
+							if(inputs[i].nextElementSibling){
+								inputs[i].nextElementSibling.remove();
+							} 
+							var text = inputs[i].value;
+							if (text.length < 1) {
+								inputs[i].classList.add("khonghople");
+								var txt = inputs[i].outerHTML +'<p style="color:red"><i><small>Request to enter information</small></i></p>';    
+								inputs[i].outerHTML = txt;
+								count++;
+							
+							}
+							if (text.length  >= 1) {
+										
+										inputs[i].classList.remove("khonghople");					
+							}							
+						}
+					
+						if (count > 0) {
+							return false;
+						}
+						return true;	
+					}
+				</script>
+					<style type="text/css">
+						.khonghople{border:1px solid red;}
+					</style>
+			</form>	
+		</div>
+	</section>
+
+	<section class="container_2">
+			<img class="map" src="images/map.jpg">
+	</section>
+
+
+</body>
+</html>
