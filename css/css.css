@@ -1,0 +1,174 @@
+body{
+	background-color: #f4f6f8;
+}
+.section_1{
+	height: 40px;
+	background-color: white;
+}
+.section_1_1{
+
+	width:50%; 
+	float: left;;
+
+}
+.gmail{
+	margin-left: 50px;
+	margin-top:10px;
+	float: left;
+}
+.phone{
+	margin-left: 20px;
+	float: left;
+	margin-top:10px;
+}
+.section_1_2{
+	float: left;
+	height: 100%;
+	width: 50%;
+}
+.fb{
+	float: left;
+	margin-left: 300px;
+	margin-top: 10px;
+	
+}
+.tw{
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.gg{
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.ig{
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.section_2{
+	height: 80px;
+	background-color: white;
+}
+.section_2_1{
+	width: 20%;
+
+	float: left;
+	height: 100%;
+}
+.anh9{
+	margin-top: 10px;
+	margin-left: 50px;
+}	
+.section_2_2{
+	width: 50%;
+	float: left;
+	padding-top: 25px;
+}
+li{
+	float: left;
+	padding-bottom: 15px; 
+}
+a{
+	color: black;
+	text-align: center;
+	font-size: 15px;
+	padding: 20px;
+	text-decoration: none;
+}
+.section_2_3{
+	width: 30%;
+
+	float: left;
+	height: 100%;
+}
+.tk{
+	margin-left: 30px;
+	float: left;
+	margin-top: 10px;
+}
+.ng{
+	margin-left: 30px;
+	margin-top: 10px;
+	float: left;
+}
+.store{
+	margin-top: 10px;
+	margin-left: 30px;
+	float: left;
+}
+.section_3{
+	height: auto;
+	text-align: center;
+
+}
+.input_get{
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 20px;
+	height: 43px;
+	width: 40%;
+	border: 2px solid #7b7b7b;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+.check{
+	margin-top: 10px;
+	margin-left: 70px;
+}
+span{
+    margin-right: 100px;
+}
+button{
+	margin-right: 50px;
+	width: 200px;
+	height: 60px;
+	font-size: 25px;
+	color: white;
+	border-style: none;
+	border-radius: 20px;
+	background-image: linear-gradient(to right, #3d45a5, #2d89c9);
+}
+.section_4{
+	padding-top: 60px;
+	padding-bottom: 150px;
+	background-color: white;
+}
+.section_4_1{
+	width: 25%;
+	float: left;
+	height: 100%;
+}
+.anh{
+	margin-top: 10px;
+	margin-left: 50px;
+}
+.section_4_2{
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+li{
+	float: left;
+	overflow: hidden;
+}
+.section_4_2_1{
+	float: left;
+	width: 23%;
+}
+
+.section_4_2_2{
+	float: left;
+	width: 35%;
+}
+
+.section_4_2_3{
+	float: left;
+	width: 30%;
+}
+.section_4_3{
+	width: 20%;
+	float: left;
+	height: 100%;
+}
