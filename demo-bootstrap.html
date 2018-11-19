@@ -5,6 +5,7 @@
 	<meta charset="UTF-8"/>
 	<title>Demo Bootstrap</title>
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
 </head>
 <body>
 	<div class="section section_1 col-lg-12">
@@ -38,7 +39,7 @@ Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân t
 				<form method="GET" action="#" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="email">Email</label>
-						<input type="text" class="form-control text-center" name="email"/>
+						<input type="text" class="form-control" name="email"/>
 					</div>
 					<div class="form-group">
 						<label for="name">User name</label>
@@ -69,8 +70,9 @@ Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân t
 					  </label>
 					</div>
 					<button class="btn btn-danger">Submit</button>
-				</form>	
-				<table class="table table-bordered table-hover table-striped">
+				</form>
+				<button class="btn btn-primary" onclick="green()">Green</button>	
+				<table class="table table-bordered table-hover table-striped" id="tbID">
 					<thead>
 						<th>Name</th>
 						<th>Email</th>
@@ -103,5 +105,29 @@ Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân t
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		//var tb = $("#tbID");
+		//var tb = $(".table");
+		function green() {
+			var tb = $("table");
+			tb.css({
+				"background-color": "white",
+				"color": "red"
+			});
+		}
+		
+		var ip = $("input[name=email]");
+		ip.addClass("hello");
+		var thead = $("table > thead");
+		//thead.addClass("xx");
+		// thead.removeClass("xx");
+		// thead.hasClass("xx")
+		if(thead.hasClass("xx")){
+			thead.removeClass("xx");
+		}else{
+			thead.addClass("xx")
+		}
+
+	</script>
 </body>
 </html>
