@@ -35,8 +35,14 @@ Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân t
 </p>
 			</div>
 			<div class="col-lg-9 col-md-9 col-sm-12" style="height: 500px;">
+				<input type="number" min="1" name="action_number" class="form-control"/>
+				<button type="button" class="btn btn-danger" onclick="action()">Action</button>
+				<div class="col-xs-12">
+					
+					<div class="box" style="width: 50px;height: 50px;float:left;background-color: red;"></div>
+				</div>
 				<div class="col-lg-9">
-				<form method="GET" action="#" enctype="multipart/form-data">
+				<form class="formD" method="GET" action="#" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="email">Email</label>
 						<input type="text" class="form-control" name="email"/>
@@ -72,7 +78,7 @@ Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân t
 					<button class="btn btn-danger">Submit</button>
 				</form>
 				<button class="btn btn-primary" onclick="green()">Green</button>	
-				<table class="table table-bordered table-hover table-striped" id="tbID">
+				<table class="table table-bordered table-hover table-striped" id="tbID" style="display: none;">
 					<thead>
 						<th>Name</th>
 						<th>Email</th>
@@ -101,6 +107,7 @@ Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân t
 						</tr>
 					</tbody>
 				</table>
+				
 			</div>
 			</div>
 		</div>
@@ -109,13 +116,30 @@ Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân t
 		//var tb = $("#tbID");
 		//var tb = $(".table");
 		function green() {
-			var tb = $("table");
-			tb.css({
-				"background-color": "white",
-				"color": "red"
+			var tb = $(".formD");
+			//tb.css("color","green");
+			// tb.css({
+			// 	"background-color": "white",
+			// 	"color": "red"
+			// });
+			//tb.fadeIn(500); // tb.fadeOut()
+			//tb.slideDown(500);// tb.slideUp()
+			//tb.hide();// tb.show()
+			//tb.slideToggle(); // tb.toggle()
+			//var h = '<p>Hello world</p>';
+			//console.log(tb.html());
+			//tb.html(h);
+			//tb.text(h); // DOM innerText 
+			tb.animate({
+					'margin-left': '100px',
+					'margin-top': '50px'
+			},1000,function(){
+				tb.animate({
+					'margin-left': '0px',
+					'margin-top': '0px'
+				},1000);
 			});
 		}
-		
 		var ip = $("input[name=email]");
 		ip.addClass("hello");
 		var thead = $("table > thead");
@@ -125,8 +149,36 @@ Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân t
 		if(thead.hasClass("xx")){
 			thead.removeClass("xx");
 		}else{
-			thead.addClass("xx")
+			thead.addClass("xx");
 		}
+		function action(){
+			var ip = $('input[name=action_number]');
+			var number = parseInt(ip.val());
+			if(isNaN(number)){
+				number = 1;
+			}
+			console.log(number);
+			var box = $('.box');
+			//for(var i=0;i<number;i++){
+				console.log(i);
+				box.animate({
+					"margin-left": "200px"
+				},2000,function(){
+					box.animate({
+						"margin-top": "200px"
+					},2000,function(){
+						box.animate({
+							"margin-left": "0px"
+						},2000,function(){
+							box.animate({
+								"margin-top": "0px"
+							},2000);
+						});
+					});
+				});
+			//}
+			
+		}	
 
 	</script>
 </body>
