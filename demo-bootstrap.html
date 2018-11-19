@@ -6,6 +6,8 @@
 	<title>Demo Bootstrap</title>
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
 	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
 </head>
 <body>
 	<div class="section section_1 col-lg-12">
@@ -20,19 +22,54 @@
 		<div class="container">
 			<div class="col-lg-3 col-md-3 col-sm-4" style="background-color: pink;height: 100px;"></div>
 			<div class="col-lg-6 col-md-6 hidden-sm" style="background-color: yellow;height: 100px;"></div>
-			<div class="col-lg-3 col-md-3 col-sm-8" style="background-color: red;height: 100px;"></div>
+			<div class="col-lg-3 col-md-3 col-sm-8" style="background-color: red;height: 100px;">
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				  Launch demo modal
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				      </div>
+				      <div class="modal-body">
+				      	<div class="form-group">
+					         <label>Email</label>
+					         <input type="email" class="form-control" placeholder="Email">
+					     </div>
+					     <div class="form-group">
+					         <label>Password</label>
+					         <input type="password" class="form-control" placeholder="Password">
+					     </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="section section_3 col-lg-12">
 		<div class="container">
 			<div class="col-lg-3 col-md-3 hidden-sm" style="background-color: white;height: 500px;">
-				<p class="text-justify pull-right"><span class="glyphicon glyphicon-th-large"></span>
-					<br/>Tờ Fox Sport châu Á nhận định Việt Nam sẽ gặp khó khăn
-Trong bài viết nhận định trước trận Việt Nam gặp Malaysia, tờ Fox Sport cho rằng đội chủ nhà Việt Nam sẽ gặp thử thách lớn tới từ đội quân đang thi đấu vào phom của HLV Tan Cheng Hoe.
-
-Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân trước Lào, Việt Nam sẽ gặp khó khăn gấp nhiều lần khi chạm trán đội tuyển đang có phong độ cao là Malaysia. Thày trò Tan Cheng Hoe hiện đã có được 2 chiến thắng và rất tự tin. Malaysia không giấu giếm tham vọng giành 3 điểm ở trận đấu này và họ đã có những kế hoạch để ứng phó với lối chơi của Việt Nam."
-
-</p>
+					<div class="dropdown">
+					  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Dropdown trigger
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dLabel">
+					    <li>Home</li>
+					    <li>Product</li>
+					    <li>Category</li>
+					  </ul>
+					</div>
 			</div>
 			<div class="col-lg-9 col-md-9 col-sm-12" style="height: 500px;">
 				<input type="number" min="1" name="action_number" class="form-control"/>
@@ -42,40 +79,64 @@ Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân t
 					<div class="box" style="width: 50px;height: 50px;float:left;background-color: red;"></div>
 				</div>
 				<div class="col-lg-9">
-				<form class="formD" method="GET" action="#" enctype="multipart/form-data">
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="text" class="form-control" name="email"/>
-					</div>
-					<div class="form-group">
-						<label for="name">User name</label>
-						<input type="text" class="form-control" name="name"/>
-					</div>
-					<div class="checkbox">
-						<label><input type="checkbox" name="checkbox"/> Check me</label>
-					</div>
-					<div class="form-group">
-						<label>Select value</label>
-						<select name="gender" class="form-control">
-							<option value="1">Male</option>
-							<option value="2">Female</option>
-						</select>
-					</div>
-					<div class="form-group">
-					    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-					    <div class="input-group">
-					      <div class="input-group-addon">VND</div>
-					      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-					      <div class="input-group-addon">K</div>
-					    </div>
-					  </div>
-					<div class="radio">
-					  <label>
-					    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-					    Option two can be something else and selecting it will deselect option one
-					  </label>
-					</div>
-					<button class="btn btn-danger">Submit</button>
+				<form data-toggle="validator" role="form">
+				  <div class="form-group">
+				    <label for="inputName" class="control-label">Name</label>
+				    <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+				  </div>
+				  <div class="form-group has-feedback">
+				    <label for="inputTwitter" class="control-label">Twitter</label>
+				    <div class="input-group">
+				      <span class="input-group-addon">@</span>
+				      <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="1000hz" required>
+				    </div>
+				    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				    <div class="help-block with-errors">Hey look, this one has feedback icons!</div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail" class="control-label">Email</label>
+				    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+				    <div class="help-block with-errors"></div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword" class="control-label">Password</label>
+				    <div class="form-inline row">
+				      <div class="form-group col-sm-6">
+				        <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+				        <div class="help-block">Minimum of 6 characters</div>
+				      </div>
+				      <div class="form-group col-sm-6">
+				        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+				        <div class="help-block with-errors"></div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="radio">
+				      <label>
+				        <input type="radio" name="underwear" required>
+				        Boxers
+				      </label>
+				    </div>
+				    <div class="radio">
+				      <label>
+				        <input type="radio" name="underwear" required>
+				        Briefs
+				      </label>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="checkbox">
+				      <label>
+				        <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
+				        Check yourself
+				      </label>
+				      <div class="help-block with-errors"></div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <button type="submit" class="btn btn-primary">Submit</button>
+				  </div>
 				</form>
 				<button class="btn btn-primary" onclick="green()">Green</button>	
 				<table class="table table-bordered table-hover table-striped" id="tbID" style="display: none;">
@@ -157,10 +218,10 @@ Bài báo này viết: "Sau chiến thắng dễ dàng 3-0 ở trận ra quân t
 			if(isNaN(number)){
 				number = 1;
 			}
-			console.log(number);
+			//console.log(number);
 			var box = $('.box');
 			//for(var i=0;i<number;i++){
-				console.log(i);
+				//console.log(i);
 				box.animate({
 					"margin-left": "200px"
 				},2000,function(){
